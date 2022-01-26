@@ -16,12 +16,6 @@ import Head from "next/head";
 const Navbar = ({ toggle }) => {
   return (
     <>
-      <Head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Atma:wght@400;500&family=Short+Stack&family=Sue+Ellen+Francisco&display=swap"
-          rel="stylesheet"
-        />
-      </Head>
       <Nav>
         <NavContainer>
           <NavLogo>
