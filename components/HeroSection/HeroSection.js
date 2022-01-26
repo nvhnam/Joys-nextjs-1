@@ -1,5 +1,5 @@
 import Image from "next/image";
-import background2 from "../../public/img/background2.jpg";
+import background2 from "../../public/img/Background2.jpg";
 import { HeroContainer, HeroWrapper } from "./HeroSectionElement";
 
 const HeroSection = () => {
