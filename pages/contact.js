@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styled from "styled-components";
 
-const HomeContainer = styled.div`
+const ContactContainer = styled.div`
   height: 70vh;
   width: 100%;
   display: flex;
@@ -10,23 +10,24 @@ const HomeContainer = styled.div`
   background: #f4a75d;
 `;
 
-const Home1 = styled.h1`
+const Contact1 = styled.h1`
   font-size: 3rem;
   text-align: center;
   color: #f8fffc;
 `;
 
-export default function Home() {
+
+export default function Contact() {
   return (
     <>
       <Head>
         <title>Joys Bakery</title>
-        <meta name="description" content="Joys coffee and bakery home" />
+        <meta name="description" content="Joys coffee and bakery contact" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <HomeContainer>
-        <Home1>Home</Home1>
-      </HomeContainer>
+      <ContactContainer>
+        <Contact1>Contact</Contact1>
+      </ContactContainer>
     </>
   );
 }
