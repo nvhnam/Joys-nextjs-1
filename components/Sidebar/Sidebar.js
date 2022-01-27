@@ -18,16 +18,16 @@ const Sidebar = ({ toggle, isOpen }) => {
         <SidebarWrapper>
           <SidebarMenu>
             <Link href="/" passHref>
-              <SidebarLink>Home</SidebarLink>
+              <SidebarLink onClick={toggle}>Home</SidebarLink>
             </Link>
             <Link href="/about" passHref>
-              <SidebarLink>About</SidebarLink>
+              <SidebarLink onClick={toggle}>About</SidebarLink>
             </Link>
             <Link href="/menu" passHref>
-              <SidebarLink>Menu</SidebarLink>
+              <SidebarLink onClick={toggle}>Menu</SidebarLink>
             </Link>
             <Link href="/contact" passHref>
-              <SidebarLink>Contact</SidebarLink>
+              <SidebarLink onClick={toggle}>Contact</SidebarLink>
             </Link>
           </SidebarMenu>
         </SidebarWrapper>
