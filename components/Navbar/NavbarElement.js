@@ -12,6 +12,7 @@ export const Nav = styled.nav`
   left: 0;
   z-index: 10;
   position: sticky;
+  /* background: transparent; */
 `;
 
 export const NavContainer = styled.div`
@@ -39,8 +40,8 @@ export const NavLogoText = styled.h1`
   display: flex;
   align-items: center;
   justify-content: center;
-  letter-spacing: 6px;
-  margin-left: 10px;
+  letter-spacing: 8px;
+  margin-left: 1.2rem;
   cursor: pointer;
 
   @media screen and (max-width: 1024px) {
@@ -92,17 +93,18 @@ export const NavItem = styled.li`
 `;
 
 export const NavLink = styled.a`
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #632626;
-  padding: 0.5rem 1.6rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.5rem 1.9rem;
+  color: #f8fffc;
   height: 100%;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
   cursor: pointer;
 
   &:hover {
+    color: #632626;
     border-bottom: 3px solid #632626;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
   /* &:active {
     border-bottom: 3px solid #632626;

@@ -27,16 +27,16 @@ const Navbar = ({ toggle }) => {
           <NavMenu>
             <NavItem>
               <Link href="/" passHref>
-                <NavLink>Home</NavLink>
+                <NavLink>HOME</NavLink>
               </Link>
               <Link href="/about" passHref>
-                <NavLink>About</NavLink>
+                <NavLink>ABOUT</NavLink>
               </Link>
               <Link href="/menu" passHref>
-                <NavLink>Menu</NavLink>
+                <NavLink>MENU</NavLink>
               </Link>
               <Link href="/contact" passHref>
-                <NavLink>Contact</NavLink>
+                <NavLink>CONTACT</NavLink>
               </Link>
             </NavItem>
           </NavMenu>

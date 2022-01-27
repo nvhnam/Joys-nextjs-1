@@ -14,7 +14,7 @@ export const FooterContainer = styled.div`
   }
 
   @media screen and (max-width: 767px) {
-    height: 15vmin;
+    height: 17vmin;
   }
 `;
 
