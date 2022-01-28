@@ -36,17 +36,33 @@ export const HomeRow1 = styled.div`
 `;
 
 export const HomeText1 = styled.h1`
-  font-size: 2.5rem;
+  font-size: 9rem;
+  margin: -1rem;
   color: #f8fffc;
+  font-family: uvfHappyCloud;
+  letter-spacing: 10px;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 6.5rem;
+    margin: -1.5rem;
+  }
+
+  @media screen and (max-width: 940px) {
+    font-size: 5rem;
+    margin: -1.8rem;
+  }
 
   @media screen and (max-width: 767px) {
-    font-size: 1.4rem;
-    margin: 0.4rem;
+    font-size: 2rem;
+    margin: -0.5rem;
     margin-top: -0.05rem;
+    letter-spacing: 5px;
   }
 
   @media screen and (max-width: 320px) {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
+    margin-top: -0.5rem;
+    margin-bottom: 0.05rem;
   }
 `;
 
@@ -54,6 +70,13 @@ export const HomeText2 = styled.h1`
   font-size: 2rem;
   color: #f8fffc;
 
+  @media screen and (max-width: 1024px) {
+    font-size: 1.8rem;
+  }
+
+  @media screen and (max-width: 940px) {
+    font-size: 1.6rem;
+  }
   @media screen and (max-width: 767px) {
     font-size: 1rem;
     margin: 0.4rem;
@@ -69,6 +92,16 @@ export const HomePara = styled.p`
   color: #f8fffc;
   margin: 1rem 0;
   margin-bottom: 2rem;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 1.5rem;
+    margin-bottom: 1.6rem;
+  }
+
+  @media screen and (max-width: 940px) {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
 
   @media screen and (max-width: 767px) {
     font-size: 0.66rem;
@@ -88,6 +121,14 @@ export const HomeLink = styled.a`
   margin-left: 0.5rem;
   font-style: italic;
   text-decoration: underline;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 1.5rem;
+  }
+
+  @media screen and (max-width: 940px) {
+    font-size: 1.2rem;
+  }
 
   @media screen and (max-width: 767px) {
     font-size: 0.8rem;

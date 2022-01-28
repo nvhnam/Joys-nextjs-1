@@ -47,6 +47,10 @@ export const HomeCol1 = styled.div`
   margin-left: auto;
   margin-right: auto;
 
+  @media screen and (max-width: 1024px) {
+    width: 40%;
+  }
+
   @media screen and (max-width: 767px) {
     width: 85%;
     justify-self: center;
@@ -58,7 +62,6 @@ export const HomeCol1Wrapper = styled.div`
   width: 100%;
   height: 100%;
   display: block;
-  border-radius: 10;
 `;
 
 export const HomeCol2 = styled.div`
@@ -68,6 +71,11 @@ export const HomeCol2 = styled.div`
   width: 48%;
   margin-right: -3rem;
   margin-left: auto;
+
+  @media screen and (max-width: 1024px) {
+    width: 50%;
+    margin-right: auto;
+  }
 
   @media screen and (max-width: 767px) {
     width: 85%;
@@ -103,7 +111,11 @@ export const HomeCol2Text2 = styled.h1`
 export const HomeCol2Para = styled.p`
   font-size: 0.7rem;
   color: white;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 1rem;
+  }
 `;
 
 export const HomeCol2Button = styled.div`

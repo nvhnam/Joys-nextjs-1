@@ -6,12 +6,15 @@ import {
   NavContainer,
   NavLogo,
   NavLogoText,
+  NavLogoText2,
+  NavLogoImg,
   MenuIcon,
   NavMenu,
   NavItem,
   NavLink,
 } from "./NavbarElement";
-import Head from "next/head";
+import Image from "next/image";
+import logo2 from "../../public/img/Logo2.png";
 
 const Navbar = ({ toggle }) => {
   return (
@@ -19,7 +22,15 @@ const Navbar = ({ toggle }) => {
       <Nav>
         <NavContainer>
           <NavLogo>
-            <NavLogoText>JOYS</NavLogoText>
+            <NavLogoText>coffee & bakery</NavLogoText>
+            <NavLogoImg>
+              <Image
+                className="NavLogo"
+                src={logo2}
+                layout="responsive"
+                alt="Joys coffee and bakery logo"
+              />
+            </NavLogoImg>
           </NavLogo>
           <MenuIcon onClick={toggle}>
             <FaBars />

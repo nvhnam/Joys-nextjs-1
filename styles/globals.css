@@ -15,10 +15,20 @@ a {
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: uvfHappyCloud;
+  src: url("../public/Font/uvf_happy_cloud_bold/UVF\ HAPPYCLOUD-Bold\ -\ VietDesigner.net.ttf")
+    format("truetype");
+}
+
 .carousel .thumbs-wrapper {
   display: none;
 }
 
 .MenuImg {
   border-radius: 15px;
+}
+
+.NavLogo {
+  border-radius: 50%;
 }
