@@ -38,7 +38,7 @@ export const NavLogo = styled.div`
 
   @media screen and (max-width: 767px) {
     width: 4rem;
-    margin-left: 8.2rem;
+    margin-left: 8.3rem;
   }
 `;
 
