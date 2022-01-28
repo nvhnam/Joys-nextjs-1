@@ -6,7 +6,8 @@ export const SidebarContainer = styled.div`
   position: fixed;
   display: grid;
   align-items: center;
-  background: #e28743;
+  /* background: #e28743; */
+  background: #772f1a;
   color: #fff;
   height: 100%;
   width: 100%;
