@@ -73,13 +73,13 @@ export default function Home() {
                 <HomeCol2Text1>Lastest Post</HomeCol2Text1>
                 <HomeCol2Underline />
                 <FacebookPostWrapper>
-                  <FacebookProvider appId="3032674603645034">
+                  {/* <FacebookProvider appId="3032674603645034">
                     <EmbeddedPost
                       href="https://www.facebook.com/JoySBakery2022/posts/1061489511373564"
-                      width="300px"
-                      height="100"
+                      width="300"
+                      height="auto"
                     />
-                  </FacebookProvider>
+                  </FacebookProvider> */}
                 </FacebookPostWrapper>
               </HomeCol2Wrapper>
             </HomeCol2>
