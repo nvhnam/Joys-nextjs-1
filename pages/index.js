@@ -76,7 +76,7 @@ export default function Home() {
                   <FacebookProvider appId="3032674603645034">
                     <EmbeddedPost
                       href="https://www.facebook.com/JoySBakery2022/posts/1061489511373564"
-                      width="200px"
+                      width="300px"
                       height="100"
                     />
                   </FacebookProvider>
