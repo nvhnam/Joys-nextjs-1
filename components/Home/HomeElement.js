@@ -34,7 +34,7 @@ export const HomeRow2 = styled.div`
   z-index: 2;
 
   @media screen and (max-width: 767px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
     padding: 2rem 1.5rem;
     justify-content: center;
     margin: 2rem 0;
@@ -50,14 +50,15 @@ export const HomeCol1 = styled.div`
   flex-direction: column;
 
   @media screen and (max-width: 1024px) {
-    width: 40%;
+    width: 41%;
+    margin-left: 2rem;
   }
 
   @media screen and (max-width: 767px) {
     width: 90%;
     justify-self: center;
     margin-bottom: 1rem;
-    margin-top: 2rem;
+    margin-top: 6rem;
     margin-left: auto;
   }
 `;
@@ -74,10 +75,12 @@ export const HomeCol12Wrapper = styled.div`
   padding: 2rem;
   background-color: rgba(0, 0, 0, 0.63);
   border-radius: 15px;
+  margin-bottom: 5rem;
   margin-top: 1.7rem;
 
   @media screen and (max-width: 767px) {
     padding: 1rem;
+    margin-bottom: 2.5rem;
   }
 `;
 
@@ -117,24 +120,51 @@ export const HomeCol12Button = styled.div`
 export const HomeCol2 = styled.div`
   display: flex;
   align-content: center;
-  width: 50%;
-  height: 50%;
-  margin-right: auto;
+  width: 70%;
+  height: 100%;
+  margin-right: -3rem;
   margin-left: auto;
   padding-left: 6rem;
-  flex-direction: column;
+  /* flex-direction: column; */
 
   @media screen and (max-width: 1024px) {
     width: 50%;
     padding-left: 0;
-    margin-right: auto;
+    margin-right: -0.7rem;
   }
 
   @media screen and (max-width: 767px) {
+    margin-right: auto;
     width: 100%;
     justify-self: center;
+    margin-top: -5rem;
+    margin-bottom: 10rem;
+    /* flex-direction: column-reverse; */
   }
 `;
+
+export const HomeRow21 = styled.div`
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column-reverse;
+  }
+`
+
+export const HomeCol21Img = styled.div`
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-top: -1.3rem;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 1.3rem;
+    margin-bottom: -12rem;
+  }
+`
 
 export const HomeCol2Wrapper = styled.div`
   width: 100%;
@@ -165,28 +195,11 @@ export const HomeCol2Underline = styled.div`
   width: 70%;
   margin-top: -1.5rem;
   border-bottom: 4px solid #772f1a;
-`;
-
-export const FacebookPostWrapper = styled.div`
-  display: inline-block;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  background-color: #f8fffc;
-  width: auto;
-  height: auto;
-  margin-top: 2rem;
-  border-radius: 4px;
+  margin-bottom: 0.7rem;
 
   @media screen and (max-width: 767px) {
-    /* width: 10rem; */
-    margin-left: -1.8rem;
-    margin-right: auto;
-    margin-bottom: 3rem;
-    /* padding: 5rem; */
-  }
-
-  @media screen and (max-width: 414px) {
-    margin-left: -0.5rem;
+    margin-bottom: 1rem;
   }
 `;
+
+
