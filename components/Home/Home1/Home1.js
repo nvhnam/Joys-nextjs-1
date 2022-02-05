@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import about2 from "../../public/img/About2.jpg";
+import about2 from "../../../public/img/About2.jpg";
 import {
   Home1Container,
   HomeImg,

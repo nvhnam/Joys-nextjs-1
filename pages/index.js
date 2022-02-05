@@ -22,8 +22,9 @@ import {
   HomeCol2Text1,
   HomeCol2Underline,
 } from "../components/Home/HomeElement";
-import Home1 from "../components/Home/Home1";
+import Home1 from "../components/Home/Home1/Home1";
 import React from "react";
+import Home2 from "../components/Home/Home2/Home2";
 
 export default function Home() {
   return (
@@ -117,6 +118,7 @@ export default function Home() {
               </HomeCol2Wrapper>
             </HomeCol2>
           </HomeRow2>
+          <Home2 />
         </HomeWrapper>
       </HomeContainer>
     </>
