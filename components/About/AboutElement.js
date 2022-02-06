@@ -7,6 +7,10 @@ export const BannerContainer = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
+
+  @media screen and (max-width: 1024px) {
+    overflow: hidden;
+  }
 `;
 
 export const PageBannerTitle = styled.h1`
@@ -62,12 +66,12 @@ export const AboutWrapper = styled.div`
   max-width: 1200px;
   margin: 10rem 0;
 
-  @media screen and (max-width: 767px) {
-    margin: 5rem 0;
+  @media screen and (max-width: 940px) {
+    margin: 7rem 0;
   }
 
-  @media screen and (width: 320px) {
-    margin: 4rem 0;
+  @media screen and (max-width: 767px) {
+    margin: 3rem 0;
   }
 `;
 
