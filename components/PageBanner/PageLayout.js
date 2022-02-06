@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const PageLayoutContainer = styled.div`
-  display: block;
+  display: flex;
   width: 100%;
   height: 100%;
   max-width: 2000px;
