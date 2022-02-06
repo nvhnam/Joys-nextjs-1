@@ -16,7 +16,7 @@ export default function PageBanner() {
   return (
     <>
       <AppBackground>
-        <Image src={transbackground} layout='responsive' />
+        <Image src={transbackground} layout="responsive" alt="Joys Banner" />
       </AppBackground>
     </>
   );
