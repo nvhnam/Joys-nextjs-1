@@ -9,8 +9,8 @@ const PageLayoutContainer = styled.div`
   left: 0;
   position: absolute;
   background: rgba(0, 0, 0, 0.6);
-  text-align: center;
   z-index: 3;
+  margin-bottom: -1rem;
 `;
 
 export default function PageLayout() {
