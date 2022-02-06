@@ -29,12 +29,12 @@ export default function Home1() {
               dolor nisi aut enim rem voluptatem tempora excepturi minus
               consectetur quia. Fugit veritatis aliquam doloribus ea.
             </HomePara>
-            <HomePara>
+            {/* <HomePara>
               Read more
               <Link href="./about" passHref>
                 <HomeLink>here</HomeLink>
               </Link>
-            </HomePara>
+            </HomePara> */}
           </HomeRow1>
         </HomeImg>
       </Home1Container>

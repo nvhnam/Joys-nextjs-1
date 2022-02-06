@@ -1,5 +1,6 @@
 import Head from "next/head";
 import styled from "styled-components";
+import PageBanner from "../components/PageBanner/PageBanner";
 
 const MenuContainer = styled.div`
   height: 70vh;
@@ -25,6 +26,7 @@ export default function Menu() {
         <meta name="description" content="Joys coffee and bakery menu" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <PageBanner />
       <MenuContainer>
         <Menu1>Menu</Menu1>
       </MenuContainer>

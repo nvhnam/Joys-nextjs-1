@@ -1,5 +1,6 @@
 import Head from "next/head";
 import styled from "styled-components";
+import PageBanner from "../components/PageBanner/PageBanner";
 
 const ContactContainer = styled.div`
   height: 70vh;
@@ -16,7 +17,6 @@ const Contact1 = styled.h1`
   color: #f8fffc;
 `;
 
-
 export default function Contact() {
   return (
     <>
@@ -25,6 +25,7 @@ export default function Contact() {
         <meta name="description" content="Joys coffee and bakery contact" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <PageBanner />
       <ContactContainer>
         <Contact1>Contact</Contact1>
       </ContactContainer>

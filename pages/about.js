@@ -1,20 +1,21 @@
 import Head from "next/head";
-import styled from "styled-components";
-
-const AboutContainer = styled.div`
-  height: 70vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #f4a75d;
-`;
-
-const About1 = styled.h1`
-  font-size: 3rem;
-  text-align: center;
-  color: #f8fffc;
-`;
+import PageBanner from "../components/PageBanner/PageBanner";
+import PageLayout from "../components/PageBanner/PageLayout";
+import {
+  PageBannerTitle,
+  BannerContainer,
+  AboutContainer,
+  AboutWrapper,
+  AboutRow,
+  AboutCol1,
+  AboutCol1Pic,
+  AboutCol2,
+  AboutCol2Wrapper,
+  AboutCol2Title,
+  AboutCol2Para,
+} from "../components/About/AboutElement";
+import Image from "next/image";
+import about3 from "../public/img/About3.jpg";
 
 export default function About() {
   return (
@@ -24,8 +25,39 @@ export default function About() {
         <meta name="description" content="Joys coffee and bakery information" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <BannerContainer>
+        <PageBanner />
+        <PageBannerTitle>ABOUT</PageBannerTitle>
+        <PageLayout />
+      </BannerContainer>
       <AboutContainer>
-        <About1>About</About1>
+        <AboutWrapper>
+          <AboutRow>
+            <AboutCol1>
+              <AboutCol1Pic>
+                <Image
+                  className="Home2Img"
+                  src={about3}
+                  layout="responsive"
+                  alt="Joys about picture"
+                />
+              </AboutCol1Pic>
+            </AboutCol1>
+            <AboutCol2>
+              <AboutCol2Wrapper>
+                <AboutCol2Title>Joys Story</AboutCol2Title>
+                <AboutCol2Para>
+                  Mỗi một người trong JoyS Team đều mang những cá tính riêng, có
+                  những hoài bão riêng cho đến khi gặp nhau thì lại có một ước
+                  mơ chung. Đó chính là JoyS. Ở JoyS chẳng bao giờ thiếu vắng
+                  tiếng cười và niềm vui cả. Bởi vì Team mình luôn tin tưởng
+                  rằng niềm vui là động lực để JoyS không chỉ là ngôi nhà chung
+                  của Team mà còn là một điều đặc biệt đối với bạn.
+                </AboutCol2Para>
+              </AboutCol2Wrapper>
+            </AboutCol2>
+          </AboutRow>
+        </AboutWrapper>
       </AboutContainer>
     </>
   );

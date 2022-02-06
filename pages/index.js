@@ -25,6 +25,7 @@ import {
 import Home1 from "../components/Home/Home1/Home1";
 import React from "react";
 import Home2 from "../components/Home/Home2/Home2";
+import HeroSection from "../components/HeroSection/HeroSection";
 
 export default function Home() {
   return (
@@ -34,9 +35,14 @@ export default function Home() {
         <meta name="description" content="Joys coffee and bakery homepage" />
         <link rel="Joys icon" href="./img/LogoTrans1.png" />
       </Head>
+      {/* Home Slide */}
+      <HeroSection />
+      {/* Home Posts */}
       <HomeContainer>
         <HomeWrapper>
+          {/* Home Banner Welcome */}
           <Home1 />
+          {/* Home About */}
           <HomeRow2>
             <HomeCol1>
               <HomeCol1Wrapper>
@@ -91,7 +97,7 @@ export default function Home() {
                     <HomeCol12Button>
                       <a
                         target="_blank"
-                        href="https://www.facebook.com/JoySBakery2022/posts/1061489511373564"
+                        href="https://www.facebook.com/JoySBakery2022/posts/1068928757296306"
                         rel="noopener noreferrer"
                       >
                         <Button
@@ -118,7 +124,9 @@ export default function Home() {
               </HomeCol2Wrapper>
             </HomeCol2>
           </HomeRow2>
+          {/* Home Menu */}
           <Home2 />
+          {/* Home Contact */}
         </HomeWrapper>
       </HomeContainer>
     </>

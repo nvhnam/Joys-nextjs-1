@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Nav = styled.nav`
   height: 81px;
   width: 100%;
-  /* background: #e28743; */
   background: #772f1a;
   font-size: 1rem;
   display: flex;
@@ -74,7 +73,7 @@ export const NavLogoText = styled.h1`
     letter-spacing: 5px;
     word-spacing: 1.4rem;
     font-size: 1.3rem;
-    margin-left: 4.3rem;
+    margin-left: 4.1rem;
   }
 
   @media screen and (width: 414px) {
@@ -105,11 +104,11 @@ export const NavLogoImg = styled.div`
   margin-left: 1rem;
 
   @media screen and (max-width: 1024px) {
-    margin-left: 2.5rem;
+    margin-left: 1.7rem;
   }
 
-  @media screen and (max-width: 1024px) {
-    margin-left: 1.7rem;
+  @media screen and (max-width: 767px) {
+    margin-left: 1.5rem;
   }
 
   @media screen and (width: 414px) {
@@ -172,10 +171,9 @@ export const NavLink = styled.a`
     border-bottom: 3px solid #f2a65a;
     transition: all 0.2s ease;
   }
-  /* &:active {
+  &:active {
     border-bottom: 3px solid #632626;
-    transition: all 0.2s ease-in-out;
-  } */
+  }
 
   @media screen and (max-width: 940px) {
     font-size: 1.1rem;

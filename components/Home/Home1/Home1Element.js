@@ -13,8 +13,6 @@ export const HomeImg = styled.div`
   width: 100%;
   height: 100%;
   position: relative;
-  z-index: 3;
-  background-image: url("../../public/img/About2.jpg");
   margin-bottom: 10rem;
 `;
 
