@@ -7,10 +7,7 @@ export const BannerContainer = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-
-  @media screen and (max-width: 1024px) {
-    overflow: hidden;
-  }
+  overflow: hidden;
 `;
 
 export const PageBannerTitle = styled.h1`
