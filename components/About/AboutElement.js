@@ -60,7 +60,7 @@ export const AboutContainer = styled.div`
 export const AboutWrapper = styled.div`
   width: 100%;
   height: 100%;
-  max-width: 1200px;
+  max-width: 1250px;
   margin: 10rem 0;
 
   @media screen and (max-width: 940px) {
@@ -78,8 +78,13 @@ export const AboutRow = styled.div`
   flex-direction: row;
   padding: 1rem 2rem;
 
+  @media screen and (min-width: 1025px) {
+    padding: 1rem 5vmax;
+  }
+
   @media screen and (max-width: 767px) {
     flex-direction: column;
+    margin-left: 0;
   }
 `;
 
@@ -128,6 +133,10 @@ export const AboutCol2Wrapper = styled.div`
   background: rgba(0, 0, 0, 0.63);
   border-radius: 10px;
 
+  @media screen and (min-width: 1025px) {
+    padding: 3vmax;
+  }
+
   @media screen and (max-width: 1024px) {
     padding: 2.4rem;
   }
@@ -147,6 +156,10 @@ export const AboutCol2Title = styled.h1`
   font-family: "Short Stack", cursive;
   margin-bottom: 6rem;
   text-align: center;
+
+  @media screen and (min-width: 1025px) {
+    margin-bottom: 5vmax;
+  }
 
   @media screen and (max-width: 1024px) {
     font-size: 3rem;

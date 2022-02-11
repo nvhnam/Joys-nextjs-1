@@ -9,14 +9,14 @@ export const Home2Container = styled.div`
   margin-top: -3rem;
 
   @media screen and (max-width: 767px) {
-    margin-top: -1rem;   
+    margin-top: -1rem;
   }
 `;
 
 export const Home2Wrapper = styled.div`
   height: 100%;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1300px;
 `;
 
 export const Home2Title = styled.h1`
@@ -100,6 +100,10 @@ export const Home2Row = styled.div`
   grid-gap: 3rem;
   padding-bottom: 6rem;
 
+  @media screen and (min-width: 1025px) {
+    grid-gap: 2.5vmax;
+  }
+
   @media screen and (max-width: 1024px) {
     grid-gap: 1.7rem;
   }
@@ -109,9 +113,8 @@ export const Home2Row = styled.div`
   }
 
   @media screen and (max-width: 767px) {
-    grid-template-columns: repeat(1, 1fr)
+    grid-template-columns: repeat(1, 1fr);
   }
-
 `;
 
 export const Home2MenuContainer = styled.div`
@@ -119,6 +122,10 @@ export const Home2MenuContainer = styled.div`
   padding: 1.2rem 1.2rem;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: 1500px) {
+    margin-left: -2vmax;
+  }
 `;
 
 export const Home2MenuWrapper = styled.div`
@@ -126,6 +133,15 @@ export const Home2MenuWrapper = styled.div`
   width: 20rem;
   border-radius: 10px;
   overflow: hidden;
+
+  @media screen and (min-width: 1440px) {
+    /* margin-left: auto; */
+  }
+
+  @media screen and (min-width: 1025px) {
+    width: 25vmax;
+    margin-left: 1.2vmax;
+  }
 
   @media screen and (max-width: 1024px) {
     width: 16rem;

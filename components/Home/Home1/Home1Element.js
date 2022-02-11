@@ -22,7 +22,7 @@ export const HomeRow1 = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 3rem;
+  /* padding: 1rem; */
   position: absolute;
   background: rgba(0, 0, 0, 0.68);
   text-align: center;
@@ -33,12 +33,28 @@ export const HomeRow1 = styled.div`
   }
 `;
 
+export const HomeRow1Wrapper = styled.div`
+  width: 100%;
+  height: 100%;
+  max-width: 1440px;
+  padding: 3rem;
+
+  @media screen and (min-width: 1025px) {
+    padding: 4vw;
+  }
+`;
+
 export const HomeText1 = styled.h1`
   font-size: 9rem;
   margin: -1rem;
   color: #f8fffc;
   font-family: uvfHappyCloud;
   letter-spacing: 10px;
+
+  @media screen and (min-width: 1025px) {
+    font-size: 13vmax;
+    margin: -2vmax;
+  }
 
   @media screen and (max-width: 1024px) {
     font-size: 6.5rem;

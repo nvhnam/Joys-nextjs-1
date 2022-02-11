@@ -5,6 +5,7 @@ import {
   Home1Container,
   HomeImg,
   HomeRow1,
+  HomeRow1Wrapper,
   HomeText1,
   HomeText2,
   HomePara,
@@ -22,19 +23,21 @@ export default function Home1() {
             alt="Joys coffee and bakery home picture"
           />
           <HomeRow1>
-            <HomeText1>Welcome to Joys</HomeText1>
-            <HomeText2>With Joys - always the good choice</HomeText2>
-            <HomePara>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
-              dolor nisi aut enim rem voluptatem tempora excepturi minus
-              consectetur quia. Fugit veritatis aliquam doloribus ea.
-            </HomePara>
-            {/* <HomePara>
+            <HomeRow1Wrapper>
+              <HomeText1>Welcome to Joys</HomeText1>
+              <HomeText2>With Joys - always the good choice</HomeText2>
+              <HomePara>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Impedit dolor nisi aut enim rem voluptatem tempora excepturi
+                minus consectetur quia. Fugit veritatis aliquam doloribus ea.
+              </HomePara>
+              {/* <HomePara>
               Read more
               <Link href="./about" passHref>
                 <HomeLink>here</HomeLink>
               </Link>
             </HomePara> */}
+            </HomeRow1Wrapper>
           </HomeRow1>
         </HomeImg>
       </Home1Container>

@@ -24,7 +24,7 @@ export const HomeWrapper = styled.div`
 export const HomeRow2 = styled.div`
   height: 100%;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   display: flex;
   align-content: center;
   flex-direction: row;
@@ -32,6 +32,10 @@ export const HomeRow2 = styled.div`
   padding: 3rem 1.8rem;
   margin: 5rem 0;
   z-index: 2;
+
+  @media screen and (min-width: 1025px) {
+    padding: 3rem 3rem;
+  }
 
   @media screen and (max-width: 767px) {
     flex-direction: column-reverse;
@@ -48,6 +52,10 @@ export const HomeCol1 = styled.div`
   margin-left: 4rem;
   margin-right: auto;
   flex-direction: column;
+
+  @media screen and (min-width: 1025px) {
+    margin-left: 4vmax;
+  }
 
   @media screen and (max-width: 1024px) {
     width: 41%;
@@ -88,17 +96,29 @@ export const HomeCol12Text1 = styled.h1`
   font-size: 1rem;
   color: white;
   font-style: italic;
+
+  @media screen and (min-width: 1025px) {
+    font-size: 1.8vmax;
+  }
 `;
 
 export const HomeCol12Text2 = styled.h1`
   font-size: 1.3rem;
   color: white;
+
+  @media screen and (min-width: 1025px) {
+    font-size: 2.3vmax;
+  }
 `;
 
 export const HomeCol12Para = styled.p`
   font-size: 0.7rem;
   color: white;
   margin-bottom: 2rem;
+
+  @media screen and (min-width: 1025px) {
+    font-size: 1.35vmax;
+  }
 
   @media screen and (max-width: 767px) {
     margin-bottom: 1rem;
@@ -126,6 +146,10 @@ export const HomeCol2 = styled.div`
   margin-left: auto;
   padding-left: 6rem;
   /* flex-direction: column; */
+
+  @media screen and (min-width: 1025px) {
+    margin-right: -0.5vmax;
+  }
 
   @media screen and (max-width: 1024px) {
     width: 50%;
