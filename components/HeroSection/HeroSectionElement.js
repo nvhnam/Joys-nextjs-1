@@ -37,10 +37,6 @@ export const HeroImg = styled.div`
   }
 
   @media screen and (max-width: 767px) {
-    height: 43vmin; 
+    height: 43vmin;
   }
-
-  /* @media screen and (max-width: 376px) {
-    height: 21vh;
-  } */
 `;

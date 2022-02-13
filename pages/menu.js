@@ -39,13 +39,13 @@ import Categories from "../components/Menu/MenuData";
 import Image from "next/image";
 
 export default function Menu() {
-  const [data, setData] = useState(Categories);
-  const filterResult = (catItem) => {
-    const result = Categories.filter((curData) => {
-      return curData.kind === catItem;
-    });
-    setData(result);
-  };
+  // const [data, setData] = useState(Categories);
+  // const filterResult = (catItem) => {
+  //   const result = Categories.filter((curData) => {
+  //     return curData.kind === catItem;
+  //   });
+  //   setData(result);
+  // };
 
   return (
     <>
