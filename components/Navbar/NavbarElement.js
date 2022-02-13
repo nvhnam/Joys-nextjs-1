@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Nav = styled.nav`
   height: 81px;
   width: 100%;
-  background: #772f1a;
+  /* background: #772f1a; */
   font-size: 1rem;
   display: flex;
   justify-content: center;
@@ -12,7 +12,14 @@ export const Nav = styled.nav`
   left: 0;
   z-index: 10;
   position: sticky;
-  /* background: transparent; */
+  margin-top: -81px;
+  background: ${({ scrollNav }) => (scrollNav ? "#772f1a" : "transparent")};
+  transition: all 0.3s ease-in-out;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 0;
+    background: #772f1a;
+  }
 `;
 
 export const NavContainer = styled.div`
@@ -30,6 +37,7 @@ export const NavLogo = styled.div`
   align-self: center;
   width: 4.3rem;
   height: auto;
+  cursor: pointer;
 
   @media screen and (min-width: 1025px) {
     margin-left: 2vmax;
@@ -60,11 +68,10 @@ export const NavLogoText = styled.h1`
   left: 1rem;
   word-spacing: -0.3rem;
   margin-left: 7.5rem;
-  cursor: pointer;
-  
+
   @media screen and (min-width: 1025px) {
     left: auto;
-    margin-left: 23vmin;
+    margin-left: 20vmin;
   }
 
   @media screen and (max-width: 1024px) {
@@ -72,7 +79,7 @@ export const NavLogoText = styled.h1`
   }
 
   @media screen and (max-width: 940px) {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     top: 0;
     margin-left: 6rem;
   }
@@ -111,6 +118,9 @@ export const NavLogoImg = styled.div`
   width: 100%;
   height: 100%;
   margin-left: 1rem;
+  background: white;
+  border-radius: 50%;
+  padding: 0.2rem;
 
   @media screen and (max-width: 1024px) {
     margin-left: 1.7rem;

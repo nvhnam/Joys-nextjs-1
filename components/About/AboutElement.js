@@ -6,8 +6,12 @@ export const BannerContainer = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 50vh;
   overflow: hidden;
+
+  @media screen and (max-width: 1024px) {
+    height: 100%;
+  }
 `;
 
 export const PageBannerTitle = styled.h1`
@@ -17,33 +21,34 @@ export const PageBannerTitle = styled.h1`
   position: absolute;
   font-size: 4rem;
   color: #f8fffc;
-  padding-left: 10rem;
-  padding-top: 5rem;
+  padding-top: 4rem;
   width: 100%;
   height: 100%;
   z-index: 4;
+  text-align: center;
+  letter-spacing: 0.5rem;
 
   @media screen and (max-width: 1024px) {
     font-size: 3.5rem;
-    padding-top: 4rem;
-    padding-left: 8rem;
+    padding-top: 5rem;
   }
 
   @media screen and (max-width: 940px) {
-    font-size: 3rem;
-    padding-top: 2.3rem;
-    padding-left: 5rem;
+    font-size: 2.8rem;
+    padding-top: 3.7rem;
   }
 
   @media screen and (max-width: 767px) {
     font-size: 1.8rem;
     padding-top: 0.7rem;
-    padding-left: 2.3rem;
+  }
+
+  @media screen and (width: 414px) {
+    padding-top: 0.8rem;
   }
 
   @media screen and (width: 320px) {
     font-size: 1.5rem;
-    padding-left: 2rem;
     padding-top: 0.4rem;
   }
 `;
@@ -61,7 +66,7 @@ export const AboutWrapper = styled.div`
   width: 100%;
   height: 100%;
   max-width: 1250px;
-  margin: 10rem 0;
+  margin: 6rem 0;
 
   @media screen and (max-width: 940px) {
     margin: 7rem 0;

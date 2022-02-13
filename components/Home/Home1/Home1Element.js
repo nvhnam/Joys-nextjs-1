@@ -42,6 +42,10 @@ export const HomeRow1Wrapper = styled.div`
   @media screen and (min-width: 1025px) {
     padding: 4vw;
   }
+
+  @media screen and (max-width: 767px) {
+    padding: 0.5rem;
+  }
 `;
 
 export const HomeText1 = styled.h1`

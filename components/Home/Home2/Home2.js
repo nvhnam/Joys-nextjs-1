@@ -32,7 +32,9 @@ export default function Home2() {
           <Home2Title>Menu</Home2Title>
           <Home2Underline1 />
           <Home2ButtonWrapper>
-            <Home2Buttons onClick={() => setData(Categories)}>All</Home2Buttons>
+            <Home2Buttons onClick={() => filterResult("special")}>
+              Special
+            </Home2Buttons>
             <Home2Buttons onClick={() => filterResult("drink")}>
               Drink
             </Home2Buttons>
@@ -48,9 +50,12 @@ export default function Home2() {
                   <Home2MenuContainer key={id}>
                     <Home2MenuWrapper>
                       <Home2MenuImg>
-                        <Image src={image} alt={alt} 
-                        className='Home2Img'
-                        layout="responsive" />
+                        <Image
+                          src={image}
+                          alt={alt}
+                          className="Home2Img"
+                          layout="responsive"
+                        />
                       </Home2MenuImg>
                       <Home2MenuTitle>{title}</Home2MenuTitle>
                       <Home2MenuPrice>{price}</Home2MenuPrice>

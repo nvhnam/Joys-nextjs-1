@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import {
   Nav,
@@ -15,23 +15,41 @@ import {
 } from "./NavbarElement";
 import Image from "next/image";
 import logo2 from "../../public/img/Logo2.png";
+import logoTrans1 from "../../public/img/LogoTrans1.png";
+import logo from "../../public/img/Logo.jpg";
 
 const Navbar = ({ toggle }) => {
+  const [scrollNav, setScrollNav] = useState(false);
+
+  const onScroll = () => {
+    if (window.scrollY >= 81) {
+      setScrollNav(true);
+    } else {
+      setScrollNav(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", onScroll);
+  }, []);
+
   return (
     <>
-      <Nav>
+      <Nav scrollNav={scrollNav}>
         <NavContainer>
-          <NavLogo>
-            <NavLogoText>coffee & bakery</NavLogoText>
-            <NavLogoImg>
-              <Image
-                className="NavLogo"
-                src={logo2}
-                layout="responsive"
-                alt="Joys coffee and bakery logo"
-              />
-            </NavLogoImg>
-          </NavLogo>
+          <Link href="/" passHref>
+            <NavLogo>
+              <NavLogoText>coffee & bakery</NavLogoText>
+              <NavLogoImg>
+                <Image
+                  className="NavLogo"
+                  src={logoTrans1}
+                  layout="responsive"
+                  alt="Joys coffee and bakery logo"
+                />
+              </NavLogoImg>
+            </NavLogo>
+          </Link>
           <MenuIcon onClick={toggle}>
             <FaBars />
           </MenuIcon>

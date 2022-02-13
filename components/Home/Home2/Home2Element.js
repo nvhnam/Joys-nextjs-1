@@ -176,7 +176,6 @@ export const Home2MenuImg = styled.div`
 
 export const Home2MenuTitle = styled.h1`
   font-size: 1.8rem;
-  /* color: #f8fffc; */
   color: #772f1a;
   margin-bottom: -0.8rem;
   text-align: center;
