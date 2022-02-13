@@ -30,7 +30,6 @@ const HeroSection = () => {
             <HeroImg>
               <Image
                 src={transBackground}
-                layout="responsive"
                 layout="fill"
                 alt="Joys coffee and bakery background"
               />
