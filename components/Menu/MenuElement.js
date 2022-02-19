@@ -89,6 +89,10 @@ export const MenuCol2Wrapper = styled.div`
   width: 100%;
   height: 100%;
   margin-left: 1rem;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 4rem;
+  }
 `;
 
 export const MenuCol2Drop = styled.select`
@@ -104,7 +108,6 @@ export const MenuCol2Drop = styled.select`
     font-size: 1.2rem;
     padding: 0.2rem;
     margin-top: -3rem;
-    margin-bottom: 0.5rem;
     margin-right: auto;
     margin-left: auto;
     color: black;

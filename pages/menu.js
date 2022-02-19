@@ -49,6 +49,7 @@ export default function Menu() {
   //   });
   //   setData(result);
   // };
+
   const [item, setItem] = useState(MenuFull);
   const filterMenu = (menuItem) => {
     const menuResult = MenuFull.filter((curItem) => {
@@ -56,8 +57,6 @@ export default function Menu() {
     });
     setItem(menuResult);
   };
-
-  // const [selectedOption, setSelectedOption] = useState(null);
 
   const [open, setOpen] = useState(false);
   const IsOpen = () => {
@@ -168,10 +167,15 @@ export default function Menu() {
             </MenuCol2Drop> */}
             <MenuCol2Drop
               placeholder="Pick your menu..."
-              onClick={() => setOpen((prev) => !prev)}
+              // onClick={() => setOpen((prev) => !prev)}
+              onTouchEnd={() => setOpen((prev) => !prev)}
             >
               <MenuCol2Option
-                onClick={() => {
+                // onClick={() => {
+                //   setItem(MenuFull);
+                //   setOpen = false;
+                // }}
+                onTouchEnd={() => {
                   setItem(MenuFull);
                   setOpen = false;
                 }}
@@ -179,7 +183,11 @@ export default function Menu() {
                 All
               </MenuCol2Option>
               <MenuCol2Option
-                onClick={() => {
+                // onClick={() => {
+                //   filterMenu("Special Joys");
+                //   setOpen = false;
+                // }}
+                onTouchEnd={() => {
                   filterMenu("Special Joys");
                   setOpen = false;
                 }}
@@ -187,7 +195,11 @@ export default function Menu() {
                 Special Joys
               </MenuCol2Option>
               <MenuCol2Option
-                onClick={() => {
+                // onClick={() => {
+                //   filterMenu("Joys Combo");
+                //   setOpen = false;
+                // }}
+                onTouchEnd={() => {
                   filterMenu("Joys Combo");
                   setOpen = false;
                 }}
@@ -195,7 +207,11 @@ export default function Menu() {
                 Joys Combo
               </MenuCol2Option>
               <MenuCol2Option
-                onClick={() => {
+                // onClick={() => {
+                //   filterMenu("Cakes");
+                //   setOpen = false;
+                // }}
+                onTouchEnd={() => {
                   filterMenu("Cakes");
                   setOpen = false;
                 }}
@@ -203,7 +219,11 @@ export default function Menu() {
                 Cakes
               </MenuCol2Option>
               <MenuCol2Option
-                onClick={() => {
+                // onClick={() => {
+                //   filterMenu("Coffee");
+                //   setOpen = false;
+                // }}
+                onTouchEnd={() => {
                   filterMenu("Coffee");
                   setOpen = false;
                 }}
@@ -211,7 +231,11 @@ export default function Menu() {
                 Coffee
               </MenuCol2Option>
               <MenuCol2Option
-                onClick={() => {
+                // onClick={() => {
+                //   filterMenu("Tea");
+                //   setOpen = false;
+                // }}
+                onTouchEnd={() => {
                   filterMenu("Tea");
                   setOpen = false;
                 }}
@@ -224,18 +248,7 @@ export default function Menu() {
                 const { id, image, alt, title, price, descr } = values;
                 return (
                   <MenuCol2Wrapper>
-                    {/* <MenuCol2Drop>
-                      <Select
-                        defaultValue={selectedOption}
-                        onChange={setSelectedOption}
-                        options={kind}
-                        onMenuOpen={setOpen}
-                        onMenuClose={setOpen}
-                        isSearchable={false}
-                        isMulti={false}
-                      />
-                    </MenuCol2Drop> */}
-                    <MenuCol2Title></MenuCol2Title>
+                    {/* <MenuCol2Title></MenuCol2Title> */}
                     <MenuCol2ListContainer key={id}>
                       <MenuCol2ListWrapper>
                         <MenuCol2ListImg>
