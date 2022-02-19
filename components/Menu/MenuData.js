@@ -2,7 +2,7 @@ import drink1 from "../../public/img/Drink1.jpg";
 import pateso from "../../public/img/Pateso.jpg";
 import combo1 from "../../public/img/Combo.jpg";
 
-const Categories = [
+const MenuFull = [
   {
     id: 1,
     image: drink1,
@@ -10,7 +10,7 @@ const Categories = [
     price: "30$",
     alt: "Joys drink",
     descr: "",
-    kind: "Coffee",
+    label: "Coffee",
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const Categories = [
     price: "35$",
     alt: "Joys pateso pie",
     descr: "",
-    kind: "Cakes",
+    label: "Cakes",
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ const Categories = [
     price: "30$",
     alt: "Joys drink",
     descr: "",
-    kind: "Coffee",
+    label: "Coffee",
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ const Categories = [
     price: "35$",
     alt: "Joys pateso pie",
     descr: "",
-    kind: "Cakes",
+    label: "Cakes",
   },
   {
     id: 5,
@@ -46,7 +46,7 @@ const Categories = [
     price: "30$",
     alt: "Joys drink",
     descr: "",
-    kind: "Coffee",
+    label: "Coffee",
   },
   {
     id: 6,
@@ -55,16 +55,16 @@ const Categories = [
     price: "35$",
     alt: "Joys pateso pie",
     descr: "",
-    kind: "Cakes",
+    label: "Cakes",
   },
   {
     id: 7,
     image: combo1,
-    title: "Combo 1",
+    title: "Joys Combo 1",
     price: "40$",
     alt: "Joys Combo",
     descr: "Drink + Cake",
-    kind: "Joys Combo",
+    label: "Joys Combo",
   },
   {
     id: 8,
@@ -73,7 +73,7 @@ const Categories = [
     price: "40$",
     alt: "Special Joys",
     descr: "Drink + Cake 2",
-    kind: "Special Joys",
+    label: "Special Joys",
   },
   {
     id: 5,
@@ -82,8 +82,8 @@ const Categories = [
     price: "30$",
     alt: "Joys Tea",
     descr: "",
-    kind: "Tea",
+    label: "Tea",
   },
 ];
 
-export default Categories;
+export default MenuFull;

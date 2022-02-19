@@ -6,6 +6,7 @@ export const HeroContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  background: #f2a65a;
   z-index: 1;
 
   @media screen and (max-width: 767px) {
@@ -18,6 +19,7 @@ export const HeroWrapper = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
+  max-width: 1300px;
   height: 100%;
   position: relative;
 `;

@@ -6,6 +6,7 @@ import {
 } from "../components/About/AboutElement";
 import PageBanner from "../components/PageBanner/PageBanner";
 import PageLayout from "../components/PageBanner/PageLayout";
+// import { BsChevronDown } from "react-icons/bs";
 import {
   MenuContainer,
   MenuWrapper,
@@ -15,6 +16,8 @@ import {
   MenuCol1Title,
   MenuCol2,
   MenuCol2Wrapper,
+  MenuCol2Drop,
+  MenuCol2Option,
   MenuCol2Title,
   MenuCol2ListContainer,
   MenuCol2ListWrapper,
@@ -35,7 +38,7 @@ import {
   Home2MenuTitle,
   Home2MenuPrice,
 } from "../components/Home/Home2/Home2Element";
-import Categories from "../components/Menu/MenuData";
+import MenuFull from "../components/Menu/MenuData";
 import Image from "next/image";
 
 export default function Menu() {
@@ -46,7 +49,20 @@ export default function Menu() {
   //   });
   //   setData(result);
   // };
+  const [item, setItem] = useState(MenuFull);
+  const filterMenu = (menuItem) => {
+    const menuResult = MenuFull.filter((curItem) => {
+      return curItem.label === menuItem;
+    });
+    setItem(menuResult);
+  };
 
+  // const [selectedOption, setSelectedOption] = useState(null);
+
+  const [open, setOpen] = useState(false);
+  const IsOpen = () => {
+    setOpen(!open);
+  };
   return (
     <>
       <Head>
@@ -59,9 +75,9 @@ export default function Menu() {
         <PageBannerTitle>MENU</PageBannerTitle>
         <PageLayout />
       </BannerContainer>
-      <MenuContainer>
+      {/* <MenuContainer>
         <MenuWrapper></MenuWrapper>
-      </MenuContainer>
+      </MenuContainer> */}
       {/* <MenuContainer>
         <MenuWrapper>       
           <MenuTitle>JOYS Combo</MenuTitle>
@@ -111,34 +127,115 @@ export default function Menu() {
 
       {/*  Ver 2  */}
 
-      {/* <MenuContainer>
+      <MenuContainer>
         <MenuWrapper>
           <MenuRow>
             <MenuCol1>
               <MenuCol1Wrapper>
-                <MenuCol1Title onClick={() => filterResult("Special Joys")}>
+                <MenuCol1Title onClick={() => setItem(MenuFull)}>
+                  All
+                </MenuCol1Title>
+                <MenuCol1Title onClick={() => filterMenu("Special Joys")}>
                   Special Joys
                 </MenuCol1Title>
-                <MenuCol1Title onClick={() => filterResult("Joys Combo")}>
+                <MenuCol1Title onClick={() => filterMenu("Joys Combo")}>
                   Joys Combo
                 </MenuCol1Title>
-                <MenuCol1Title onClick={() => filterResult("Cakes")}>
+                <MenuCol1Title onClick={() => filterMenu("Cakes")}>
                   Cakes
                 </MenuCol1Title>
-                <MenuCol1Title onClick={() => filterResult("Coffee")}>
+                <MenuCol1Title onClick={() => filterMenu("Coffee")}>
                   Coffee
                 </MenuCol1Title>
-                <MenuCol1Title onClick={() => filterResult("Tea")}>
+                <MenuCol1Title onClick={() => filterMenu("Tea")}>
                   Tea
                 </MenuCol1Title>
               </MenuCol1Wrapper>
             </MenuCol1>
+            {/* <MenuCol2Drop>
+              <Select
+                components={makeAnimated()}
+                defaultValue={selectedOption}
+                onChange={setSelectedOption}
+                options={item}
+                placeholder="Pick your menu..."
+                onMenuOpen={setOpen}
+                onMenuClose={setOpen}
+                isSearchable={false}
+                isMulti={false}
+                autoFocus={true}
+              />
+            </MenuCol2Drop> */}
+            <MenuCol2Drop
+              placeholder="Pick your menu..."
+              onClick={() => setOpen((prev) => !prev)}
+            >
+              <MenuCol2Option
+                onClick={() => {
+                  setItem(MenuFull);
+                  setOpen = false;
+                }}
+              >
+                All
+              </MenuCol2Option>
+              <MenuCol2Option
+                onClick={() => {
+                  filterMenu("Special Joys");
+                  setOpen = false;
+                }}
+              >
+                Special Joys
+              </MenuCol2Option>
+              <MenuCol2Option
+                onClick={() => {
+                  filterMenu("Joys Combo");
+                  setOpen = false;
+                }}
+              >
+                Joys Combo
+              </MenuCol2Option>
+              <MenuCol2Option
+                onClick={() => {
+                  filterMenu("Cakes");
+                  setOpen = false;
+                }}
+              >
+                Cakes
+              </MenuCol2Option>
+              <MenuCol2Option
+                onClick={() => {
+                  filterMenu("Coffee");
+                  setOpen = false;
+                }}
+              >
+                Coffee
+              </MenuCol2Option>
+              <MenuCol2Option
+                onClick={() => {
+                  filterMenu("Tea");
+                  setOpen = false;
+                }}
+              >
+                Tea
+              </MenuCol2Option>
+            </MenuCol2Drop>
             <MenuCol2>
-              {data.map((values) => {
-                const { id, image, alt, title, price, descr, kind } = values;
+              {item.map((values) => {
+                const { id, image, alt, title, price, descr } = values;
                 return (
                   <MenuCol2Wrapper>
-                    <MenuCol2Title>{kind}</MenuCol2Title>
+                    {/* <MenuCol2Drop>
+                      <Select
+                        defaultValue={selectedOption}
+                        onChange={setSelectedOption}
+                        options={kind}
+                        onMenuOpen={setOpen}
+                        onMenuClose={setOpen}
+                        isSearchable={false}
+                        isMulti={false}
+                      />
+                    </MenuCol2Drop> */}
+                    <MenuCol2Title></MenuCol2Title>
                     <MenuCol2ListContainer key={id}>
                       <MenuCol2ListWrapper>
                         <MenuCol2ListImg>
@@ -160,7 +257,7 @@ export default function Menu() {
             </MenuCol2>
           </MenuRow>
         </MenuWrapper>
-      </MenuContainer> */}
+      </MenuContainer>
     </>
   );
 }

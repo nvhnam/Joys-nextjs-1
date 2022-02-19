@@ -1,5 +1,5 @@
 import Image from "next/image";
-// import background2 from "../../public/img/Background2.jpg";
+import background2 from "../../public/img/Background2.jpg";
 import background4 from "../../public/img/Background4.jpg";
 import transBackground from "../../public/img/TransBackground2.png";
 import { HeroContainer, HeroWrapper, HeroImg } from "./HeroSectionElement";
@@ -23,7 +23,7 @@ const HeroSection = () => {
             <HeroImg>
               <Image
                 src={background4}
-                layout="responsive"
+                layout="fill"
                 alt="Joys coffee and bakery background"
               />
             </HeroImg>
