@@ -247,9 +247,9 @@ export default function Menu() {
               {item.map((values) => {
                 const { id, image, alt, title, price, descr } = values;
                 return (
-                  <MenuCol2Wrapper>
+                  <MenuCol2Wrapper key={id}>
                     {/* <MenuCol2Title></MenuCol2Title> */}
-                    <MenuCol2ListContainer key={id}>
+                    <MenuCol2ListContainer>
                       <MenuCol2ListWrapper>
                         <MenuCol2ListImg>
                           <Image
