@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   BannerContainer,
   PageBannerTitle,
@@ -62,6 +62,17 @@ export default function Menu() {
   const IsOpen = () => {
     setOpen(!open);
   };
+
+  // const ref = useRef(null);
+  // useEffect(() => {
+  //   document.addEventListener("touchend", toggle);
+  //   return () => document.removeEventListener("touchend", toggle);
+  // }, []);
+
+  // function toggle(e) {
+  //   setOpen(e && e.target === ref.current);
+  // }
+
   return (
     <>
       <Head>
@@ -151,24 +162,10 @@ export default function Menu() {
                 </MenuCol1Title>
               </MenuCol1Wrapper>
             </MenuCol1>
-            {/* <MenuCol2Drop>
-              <Select
-                components={makeAnimated()}
-                defaultValue={selectedOption}
-                onChange={setSelectedOption}
-                options={item}
-                placeholder="Pick your menu..."
-                onMenuOpen={setOpen}
-                onMenuClose={setOpen}
-                isSearchable={false}
-                isMulti={false}
-                autoFocus={true}
-              />
-            </MenuCol2Drop> */}
             <MenuCol2Drop
               placeholder="Pick your menu..."
               // onClick={() => setOpen((prev) => !prev)}
-              onTouchEnd={() => setOpen((prev) => !prev)}
+              // onTouchEnd={() => setOpen((prev) => !prev)}
             >
               <MenuCol2Option
                 // onClick={() => {
@@ -215,6 +212,7 @@ export default function Menu() {
                   filterMenu("Cakes");
                   setOpen = false;
                 }}
+                value="Cakes"
               >
                 Cakes
               </MenuCol2Option>

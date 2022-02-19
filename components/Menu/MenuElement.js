@@ -76,12 +76,14 @@ export const MenuCol2 = styled.div`
   height: auto;
   flex-direction: column; */
   display: grid;
-  grid-template-columns: repeat(3, 2fr);
+  grid-template-columns: repeat(3, 3fr);
   grid-gap: 2rem;
+  margin-top: -2rem;
 
   @media screen and (max-width: 767px) {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 0rem;
+    margin-top: 0;
   }
 `;
 
@@ -161,9 +163,11 @@ export const MenuCol2ListWrapper = styled.div`
   width: 15rem;
   border-radius: 10px;
   overflow: hidden;
+  margin-top: 4rem;
 
   @media screen and (max-width: 767px) {
     width: 9rem;
+    margin-top: 0;
   }
 `;
 
