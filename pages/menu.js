@@ -168,75 +168,75 @@ export default function Menu() {
               // onTouchEnd={() => setOpen((prev) => !prev)}
             >
               <MenuCol2Option
-                // onClick={() => {
-                //   setItem(MenuFull);
-                //   setOpen = false;
-                // }}
-                onTouchEnd={() => {
+                onClick={() => {
                   setItem(MenuFull);
                   setOpen = false;
                 }}
+                // onTouchEnd={() => {
+                //   setItem(MenuFull);
+                //   setOpen = false;
+                // }}
               >
                 All
               </MenuCol2Option>
               <MenuCol2Option
-                // onClick={() => {
-                //   filterMenu("Special Joys");
-                //   setOpen = false;
-                // }}
-                onTouchEnd={() => {
+                onClick={() => {
                   filterMenu("Special Joys");
                   setOpen = false;
                 }}
+                // onTouchEnd={() => {
+                //   filterMenu("Special Joys");
+                //   setOpen = false;
+                // }}
               >
                 Special Joys
               </MenuCol2Option>
               <MenuCol2Option
-                // onClick={() => {
-                //   filterMenu("Joys Combo");
-                //   setOpen = false;
-                // }}
-                onTouchEnd={() => {
+                onClick={() => {
                   filterMenu("Joys Combo");
                   setOpen = false;
                 }}
+                // onTouchEnd={() => {
+                //   filterMenu("Joys Combo");
+                //   setOpen = false;
+                // }}
               >
                 Joys Combo
               </MenuCol2Option>
               <MenuCol2Option
-                // onClick={() => {
-                //   filterMenu("Cakes");
-                //   setOpen = false;
-                // }}
-                onTouchEnd={() => {
+                onClick={() => {
                   filterMenu("Cakes");
                   setOpen = false;
                 }}
-                value="Cakes"
+                // onTouchEnd={() => {
+                //   filterMenu("Cakes");
+                //   setOpen = false;
+                // }}
+                // value="Cakes"
               >
                 Cakes
               </MenuCol2Option>
               <MenuCol2Option
-                // onClick={() => {
-                //   filterMenu("Coffee");
-                //   setOpen = false;
-                // }}
-                onTouchEnd={() => {
+                onClick={() => {
                   filterMenu("Coffee");
                   setOpen = false;
                 }}
+                // onTouchEnd={() => {
+                //   filterMenu("Coffee");
+                //   setOpen = false;
+                // }}
               >
                 Coffee
               </MenuCol2Option>
               <MenuCol2Option
-                // onClick={() => {
-                //   filterMenu("Tea");
-                //   setOpen = false;
-                // }}
-                onTouchEnd={() => {
+                onClick={() => {
                   filterMenu("Tea");
                   setOpen = false;
                 }}
+                // onTouchEnd={() => {
+                //   filterMenu("Tea");
+                //   setOpen = false;
+                // }}
               >
                 Tea
               </MenuCol2Option>
