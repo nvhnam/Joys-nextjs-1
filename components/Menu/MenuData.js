@@ -10,7 +10,9 @@ const MenuFull = [
     price: "30$",
     alt: "Joys drink",
     descr: "",
-    label: "Coffee",
+    kind: "Coffee",
+    name: "flavours",
+    value: "Coffee",
   },
   {
     id: 2,
@@ -19,7 +21,9 @@ const MenuFull = [
     price: "35$",
     alt: "Joys pateso pie",
     descr: "",
-    label: "Cakes",
+    kind: "Cakes",
+    value: "Cakes",
+    name: "flavours",
   },
   {
     id: 3,
@@ -28,7 +32,9 @@ const MenuFull = [
     price: "30$",
     alt: "Joys drink",
     descr: "",
-    label: "Coffee",
+    kind: "Coffee",
+    value: "Coffee",
+    name: "flavours",
   },
   {
     id: 4,
@@ -37,7 +43,9 @@ const MenuFull = [
     price: "35$",
     alt: "Joys pateso pie",
     descr: "",
-    label: "Cakes",
+    kind: "Cakes",
+    value: "Cakes",
+    name: "flavours",
   },
   {
     id: 5,
@@ -46,7 +54,9 @@ const MenuFull = [
     price: "30$",
     alt: "Joys drink",
     descr: "",
-    label: "Coffee",
+    kind: "Coffee",
+    value: "Coffee",
+    name: "flavours",
   },
   {
     id: 6,
@@ -55,7 +65,9 @@ const MenuFull = [
     price: "35$",
     alt: "Joys pateso pie",
     descr: "",
-    label: "Cakes",
+    kind: "Cakes",
+    value: "Cakes",
+    name: "flavours",
   },
   {
     id: 7,
@@ -64,7 +76,9 @@ const MenuFull = [
     price: "40$",
     alt: "Joys Combo",
     descr: "Drink + Cake",
-    label: "Joys Combo",
+    kind: "Joys Combo",
+    value: "Joys Combo",
+    name: "flavours",
   },
   {
     id: 8,
@@ -73,7 +87,9 @@ const MenuFull = [
     price: "40$",
     alt: "Special Joys",
     descr: "Drink + Cake 2",
-    label: "Special Joys",
+    kind: "Special Joys",
+    value: "Special Joys",
+    name: "flavours",
   },
   {
     id: 9,
@@ -82,7 +98,9 @@ const MenuFull = [
     price: "30$",
     alt: "Joys Tea",
     descr: "",
-    label: "Tea",
+    kind: "Tea",
+    name: "flavours",
+    value: "Tea",
   },
 ];
 

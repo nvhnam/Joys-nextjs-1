@@ -94,7 +94,7 @@ export const HomeCol12Wrapper = styled.div`
 
 export const HomeCol12Text1 = styled.h1`
   font-size: 1rem;
-  color: white;
+  color: #f8fffc;
   font-style: italic;
 
   @media screen and (min-width: 1025px) {
@@ -104,7 +104,7 @@ export const HomeCol12Text1 = styled.h1`
 
 export const HomeCol12Text2 = styled.h1`
   font-size: 1.3rem;
-  color: white;
+  color: #f8fffc;
 
   @media screen and (min-width: 1025px) {
     font-size: 2.3vmax;
@@ -113,7 +113,7 @@ export const HomeCol12Text2 = styled.h1`
 
 export const HomeCol12Para = styled.p`
   font-size: 0.7rem;
-  color: white;
+  color: #f8fffc;
   margin-bottom: 2rem;
 
   @media screen and (min-width: 1025px) {

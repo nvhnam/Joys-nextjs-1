@@ -9,6 +9,10 @@ export const BannerContainer = styled.div`
   height: 50vh;
   overflow: hidden;
 
+  @media screen and (min-width: 1025px) {
+    height: 60vmin;
+  }
+
   @media screen and (max-width: 1024px) {
     height: 100%;
   }
@@ -19,7 +23,7 @@ export const PageBannerTitle = styled.h1`
   top: 0;
   left: 0;
   position: absolute;
-  font-size: 4rem;
+  font-size: 3vmax;
   color: #f8fffc;
   padding-top: 4rem;
   width: 100%;
@@ -27,6 +31,11 @@ export const PageBannerTitle = styled.h1`
   z-index: 4;
   text-align: center;
   letter-spacing: 0.5rem;
+
+  @media screen and (min-width: 1025px) {
+    font-size: 13vmin;
+    padding-top: 12vmin;
+  }
 
   @media screen and (max-width: 1024px) {
     font-size: 3.5rem;
