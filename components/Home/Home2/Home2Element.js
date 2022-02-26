@@ -119,6 +119,7 @@ export const Home2Row = styled.div`
 
 export const Home2MenuContainer = styled.div`
   width: 100%;
+  height: 100%;
   padding: 1.2rem 1.2rem;
   margin-left: auto;
   margin-right: auto;
@@ -193,5 +194,40 @@ export const Home2MenuPrice = styled.p`
 
   @media screen and (max-width: 940px) {
     font-size: 1.2rem;
+  }
+`;
+
+export const Home2MenuButton = styled.button`
+  display: block;
+  padding: 14px 60px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #772f1a;
+  /* background-color: #772f1a; */
+  /* background-color: transparent; */
+  background: #eec170;
+  border-radius: 10px;
+  border: solid 3px #772f1a;
+  margin: -1.3rem auto 3rem auto;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    background: #772f1a;
+    color: white;
+    transition: all 0.2s ease-out;
+  }
+
+  @media screen and (max-width: 1024px) {
+    font-size: 1.9vmax;
+    padding: 1vmax 2.5vmax;
+    margin-top: -4vmax;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 12px 40px;
+    margin-top: -3rem;
   }
 `;

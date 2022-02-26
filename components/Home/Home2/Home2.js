@@ -13,8 +13,10 @@ import {
   Home2MenuImg,
   Home2MenuTitle,
   Home2MenuPrice,
+  Home2MenuButton,
 } from "./Home2Element";
 import Categories from "./Home2Data";
+import Link from "next/link";
 
 export default function Home2() {
   const [data, setData] = useState(Categories);
@@ -29,7 +31,7 @@ export default function Home2() {
     <>
       <Home2Container>
         <Home2Wrapper>
-          <Home2Title>Menu</Home2Title>
+          <Home2Title>The Best Joys</Home2Title>
           <Home2Underline1 />
           <Home2ButtonWrapper>
             <Home2Buttons onClick={() => filterResult("special")}>
@@ -65,6 +67,9 @@ export default function Home2() {
               );
             })}
           </Home2Row>
+          <Link href="/menu" passHref>
+            <Home2MenuButton>View Menu</Home2MenuButton>
+          </Link>
         </Home2Wrapper>
       </Home2Container>
     </>

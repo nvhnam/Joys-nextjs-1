@@ -1,21 +1,18 @@
 import Head from "next/head";
-import styled from "styled-components";
 import PageBanner from "../components/PageBanner/PageBanner";
-
-const ContactContainer = styled.div`
-  height: 70vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #f4a75d;
-`;
-
-const Contact1 = styled.h1`
-  font-size: 3rem;
-  text-align: center;
-  color: #f8fffc;
-`;
+import PageLayout from "../components/PageBanner/PageLayout";
+import {
+  PageBannerTitle,
+  BannerContainer,
+} from "../components/About/AboutElement";
+import {
+  ContactCol1,
+  ContactContainer,
+  ContactWrapper,
+  ContactRow,
+  ContactCol2,
+} from "../components/Contact/ContactElement";
+import Contact1 from "../components/Contact/Contact1/Contact1";
 
 export default function Contact() {
   return (
@@ -25,9 +22,20 @@ export default function Contact() {
         <meta name="description" content="Joys coffee and bakery contact" />
         <link rel="Joys icon" href="./img/LogoTrans1.png" />
       </Head>
-      <PageBanner />
+      <BannerContainer>
+        <PageBanner />
+        <PageBannerTitle>CONTACT</PageBannerTitle>
+        <PageLayout />
+      </BannerContainer>
       <ContactContainer>
-        <Contact1>Contact</Contact1>
+        <ContactWrapper>
+          <ContactRow>
+            <ContactCol1>
+              <Contact1/>
+            </ContactCol1>
+            <ContactCol2></ContactCol2>
+          </ContactRow>
+        </ContactWrapper>
       </ContactContainer>
     </>
   );

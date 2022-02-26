@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Button = styled.a`
+export const Button = styled.button`
   white-space: nowrap;
   text-decoration: none;
   outline: none;
@@ -9,12 +9,12 @@ export const Button = styled.a`
   justify-content: center;
   align-content: center;
   border: ${({ withBorder }) => (withBorder ? "2px solid black" : "none")};
-  border-radius: 25px;
+  border-radius: 20px;
   cursor: pointer;
   color: ${({ isBlack }) => (isBlack ? "black" : "white")};
-  padding: ${({ isBig }) => (isBig ? "16px 85px" : "7px 30px")};
-  background-color: ${({ isWhite }) => (isWhite ? "white" : "black")};
-  font-size: ${({ bigFont }) => (bigFont ? "28px" : "20px")};
+  padding: ${({ isBig }) => (isBig ? "15px 75px" : "7px 30px")};
+  background-color: ${({ isWhite }) => (isWhite ? "white" : "#772f1a")};
+  font-size: ${({ bigFont }) => (bigFont ? "26px" : "20px")};
   transition: all 0.2s ease-in-out;
 
   &:hover {
