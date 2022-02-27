@@ -16,6 +16,10 @@ export const ContactWrapper = styled.div`
   margin-top: 5rem;
   margin-bottom: 6rem;
   padding: 1rem 1rem;
+
+  @media screen and (max-width: 767px) {
+    margin: 2rem 0 3rem 0;
+  }
 `;
 
 export const ContactRow = styled.div`
@@ -23,28 +27,33 @@ export const ContactRow = styled.div`
   height: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
+  padding: 1rem;
 
   @media screen and (max-width: 767px) {
     flex-direction: column;
+    padding: 1.7rem;
   }
 `;
 
 export const ContactCol1 = styled.div`
-  width: 50%;
+  width: 42%;
   height: 100%;
+  padding-right: 1rem;
 
   @media screen and (max-width: 767px) {
     width: 100%;
+    padding-right: 0;
   }
 `;
 
 export const ContactCol2 = styled.div`
   width: 50%;
   height: 100%;
+  padding-left: 1rem;
 
   @media screen and (max-width: 767px) {
     width: 100%;
+    padding-left: 0;
   }
 `;

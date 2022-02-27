@@ -24,8 +24,8 @@ export default function Home1() {
           />
           <HomeRow1>
             <HomeRow1Wrapper>
-              <HomeText1>Welcome to Joys</HomeText1>
-              <HomeText2>With Joys - always the good choice</HomeText2>
+              <HomeText1>Welcome to JoyS</HomeText1>
+              <HomeText2>With JoyS - always the good choice</HomeText2>
               <HomePara>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Impedit dolor nisi aut enim rem voluptatem tempora excepturi

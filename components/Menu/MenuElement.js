@@ -147,6 +147,10 @@ export const MenuCol1Title = styled.button`
     text-align: left;
     outline: none;
     font-size: 1rem;
+
+    &:hover {
+      display: none;
+    }
   }
 
   @media screen and (min-height: 1024px) {
@@ -163,10 +167,6 @@ export const MenuCol2Row = styled.div`
 `;
 
 export const MenuCol2 = styled.div`
-  /* display: flex;
-  width: 70%;
-  height: auto;
-  flex-direction: column; */
   display: grid;
   grid-template-columns: repeat(3, 3fr);
   grid-gap: 2.3vmax;
@@ -192,53 +192,9 @@ export const MenuCol2Wrapper = styled.div`
   @media screen and (max-width: 767px) {
     margin-top: 4rem;
     margin-left: 4.6vw;
+    width: auto;
   }
 `;
-
-// export const MenuCol2Drop = styled.div`
-//   display: none;
-
-//   @media screen and (max-width: 767px) {
-//     width: 50%;
-//     height: auto;
-//     display: block;
-//     text-align: center;
-//     border-radius: 10px;
-//     font-weight: bold;
-//     font-size: 1.2rem;
-//     padding: 0.2rem;
-//     margin-top: -3rem;
-//     margin-right: auto;
-//     margin-left: auto;
-//     color: black;
-//     background: white;
-//     position: relative;
-//     transition: all 0.2s ease;
-//     top: 0;
-//     left: 0;
-//   }
-// `;
-
-// export const MenuCol2Option = styled.option`
-//   display: none;
-
-//   @media screen and (max-width: 767px) {
-//     display: block;
-//     height: 100%;
-//     width: auto;
-//     font-size: 1.2rem;
-//     margin-left: auto;
-//     margin-right: auto;
-//     color: black;
-//     background: white;
-//     position: absolute;
-//     cursor: pointer;
-//     text-align: center;
-//     transition: all 0.2s ease;
-//     top: 0;
-//     left: 0;
-//   }
-// `;
 
 export const MenuCol2Title = styled.div`
   font-size: 4vmax;

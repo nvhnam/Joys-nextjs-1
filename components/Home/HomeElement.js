@@ -134,6 +134,7 @@ export const HomeCol12Button = styled.div`
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    padding: 1vmax;
   }
 `;
 

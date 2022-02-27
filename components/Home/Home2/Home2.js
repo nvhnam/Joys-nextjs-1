@@ -31,7 +31,7 @@ export default function Home2() {
     <>
       <Home2Container>
         <Home2Wrapper>
-          <Home2Title>The Best Joys</Home2Title>
+          <Home2Title>The Best JoyS</Home2Title>
           <Home2Underline1 />
           <Home2ButtonWrapper>
             <Home2Buttons onClick={() => filterResult("special")}>

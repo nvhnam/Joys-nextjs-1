@@ -51,9 +51,9 @@ export default function Menu() {
   return (
     <>
       <Head>
-        <title>Joys Bakery</title>
-        <meta name="description" content="Joys coffee and bakery menu" />
-        <link rel="Joys icon" href="./img/LogoTrans1.png" />
+        <title>JoyS Bakery</title>
+        <meta name="description" content="JoyS coffee and bakery menu" />
+        <link rel="JoyS icon" href="./img/LogoTrans1.png" />
       </Head>
       <BannerContainer>
         <PageBanner />
@@ -85,21 +85,21 @@ export default function Menu() {
                   </MenuCol1Title>
                   <MenuCol1Title
                     onClick={() => {
-                      filterMenu("Special Joys");
-                      setSelected("Special Joys");
+                      filterMenu("Special JoyS");
+                      setSelected("Special JoyS");
                       drop();
                     }}
                   >
-                    Special Joys
+                    Special JoyS
                   </MenuCol1Title>
                   <MenuCol1Title
                     onClick={() => {
-                      filterMenu("Joys Combo");
-                      setSelected("Joys Combo");
+                      filterMenu("JoyS Combo");
+                      setSelected("JoyS Combo");
                       drop();
                     }}
                   >
-                    Joys Combo
+                    JoyS Combo
                   </MenuCol1Title>
                   <MenuCol1Title
                     onClick={() => {

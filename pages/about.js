@@ -21,9 +21,9 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>Joys Bakery</title>
+        <title>JoyS Bakery</title>
         <meta name="description" content="Joys coffee and bakery information" />
-        <link rel="Joys icon" href="./img/LogoTrans1.png" />
+        <link rel="JoyS icon" href="./img/LogoTrans1.png" />
       </Head>
       <BannerContainer>
         <PageBanner />
@@ -45,7 +45,7 @@ export default function About() {
             </AboutCol1>
             <AboutCol2>
               <AboutCol2Wrapper>
-                <AboutCol2Title>Joys Story</AboutCol2Title>
+                <AboutCol2Title>JoyS Story</AboutCol2Title>
                 <AboutCol2Para>
                   Mỗi một người trong JoyS Team đều mang những cá tính riêng, có
                   những hoài bão riêng cho đến khi gặp nhau thì lại có một ước

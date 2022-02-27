@@ -2,6 +2,7 @@ import { Button } from "../../Button/ButtonElement";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import { useToast } from "../../../hooks/useToast";
+import { useState } from "react";
 import {
   Contact1Container,
   Contact1Wrapper,
@@ -21,16 +22,16 @@ const Contact1 = () => {
     formState: { errors },
     reset,
   } = useForm();
+
   async function onSubmitForm(values) {
     let config = {
       method: "post",
-      url: `${process.env.NEXT_PUBLIC_API_URL}/api/ContactContent`,
+      url: `../../../api/ContactContent`,
       headers: {
         "Content-Type": "application/json",
       },
       data: values,
     };
-
     try {
       const response = await axios(config);
       console.log(response);
@@ -43,6 +44,7 @@ const Contact1 = () => {
       }
     } catch (err) {}
   }
+
   return (
     // ------------ Contact Form --------------
     <>
@@ -65,6 +67,7 @@ const Contact1 = () => {
             <Contact1Label
               placeholder="Email"
               type="text"
+              name="email"
               {...register("email", {
                 required: {
                   value: true,
@@ -88,12 +91,17 @@ const Contact1 = () => {
             <Contact1Label
               placeholder="Phone Number"
               type="number"
+              name="phone"
               {...register("phone", {
                 required: {
                   value: true,
                   message: "Please enter your phone number",
                 },
-                Length: {
+                minLength: {
+                  value: 10,
+                  message: "Please enter the correct phone number",
+                },
+                maxLength: {
                   value: 10,
                   message: "Please enter the correct phone number",
                 },
@@ -102,6 +110,8 @@ const Contact1 = () => {
             <Contact1Span>{errors.phone?.message}</Contact1Span>
             <Contact1Message
               placeholder="Message"
+              type="text"
+              name="message"
               {...register("message", {
                 required: {
                   value: true,
@@ -119,7 +129,7 @@ const Contact1 = () => {
             />
             <Contact1Span>{errors.message?.message}</Contact1Span>
             <Contact1Submit>
-              <Button isBig={true} bigFont={true} type="submit">
+              <Button isBig={true} bigFont={true} type="submit" value="submit">
                 Submit
               </Button>
             </Contact1Submit>

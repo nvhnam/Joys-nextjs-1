@@ -31,9 +31,9 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Joys Bakery</title>
-        <meta name="description" content="Joys coffee and bakery homepage" />
-        <link rel="Joys icon" href="./img/LogoTrans1.png" />
+        <title>JoyS Bakery</title>
+        <meta name="description" content="JoyS coffee and bakery homepage" />
+        <link rel="JoyS icon" href="./img/LogoTrans1.png" />
       </Head>
       {/* Home Slide */}
       <HeroSection />

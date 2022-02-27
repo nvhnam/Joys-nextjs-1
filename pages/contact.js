@@ -18,9 +18,9 @@ export default function Contact() {
   return (
     <>
       <Head>
-        <title>Joys Bakery</title>
-        <meta name="description" content="Joys coffee and bakery contact" />
-        <link rel="Joys icon" href="./img/LogoTrans1.png" />
+        <title>JoyS Bakery</title>
+        <meta name="description" content="JoyS coffee and bakery contact" />
+        <link rel="JoyS icon" href="./img/LogoTrans1.png" />
       </Head>
       <BannerContainer>
         <PageBanner />
@@ -31,7 +31,7 @@ export default function Contact() {
         <ContactWrapper>
           <ContactRow>
             <ContactCol1>
-              <Contact1/>
+              <Contact1 />
             </ContactCol1>
             <ContactCol2></ContactCol2>
           </ContactRow>

@@ -6,7 +6,6 @@ function MyApp({ Component, pageProps }) {
   return (
     <Layout>
       <ToastProvider>
-
       <Component {...pageProps} />
       </ToastProvider>
     </Layout>
