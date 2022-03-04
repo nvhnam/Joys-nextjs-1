@@ -19,7 +19,7 @@ export const HeroWrapper = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 1300px;
+  /* max-width: 1900px; */
   height: 100%;
   position: relative;
 `;
@@ -30,7 +30,7 @@ export const HeroImg = styled.div`
   height: 100vh;
   position: relative;
 
-  @media screen and (height: 1366px) {
+  @media screen and (height: 1180px) {
     height: 32vh;
   }
 

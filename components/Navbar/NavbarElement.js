@@ -16,6 +16,11 @@ export const Nav = styled.nav`
   background: ${({ scrollNav }) => (scrollNav ? "#772f1a" : "transparent")};
   transition: all 0.3s ease-in-out;
 
+  @media screen and (min-width: 1025px) {
+    height: 14vmin;
+    margin-top: -14vmin;
+  }
+
   @media screen and (max-width: 767px) {
     margin-top: 0;
     background: #772f1a;
@@ -25,10 +30,14 @@ export const Nav = styled.nav`
 export const NavContainer = styled.div`
   height: 81px;
   width: 100%;
-  max-width: 1300px;
+  max-width: 2400px;
   display: flex;
   justify-items: space-between;
   align-content: center;
+
+  @media screen and (min-width: 1025px) {
+    height: auto;
+  }
 `;
 
 export const NavLogo = styled.div`
@@ -64,12 +73,17 @@ export const NavLogoText = styled.h1`
   align-items: center;
   justify-content: center;
   letter-spacing: 7px;
-  top: -1rem;
+  /* top: -1rem; */
+  margin-top: 0rem;
   left: 1rem;
   word-spacing: -0.3rem;
   margin-left: 7.5rem;
 
   @media screen and (min-width: 1025px) {
+    /* top: -1vw; */
+    /* margin-top: -1vmin; */
+    top: 1.5vmin;
+    font-size: 4.8vmin;
     left: auto;
     margin-left: 20vmin;
   }
@@ -80,12 +94,12 @@ export const NavLogoText = styled.h1`
 
   @media screen and (max-width: 940px) {
     font-size: 1.4rem;
-    top: 0;
+    margin-top: 0.8vmin;
     margin-left: 6rem;
   }
 
   @media screen and (max-width: 767px) {
-    top: 0rem;
+    margin-top: 2vmin;
     letter-spacing: 5px;
     word-spacing: 1.4rem;
     font-size: 1.3rem;
@@ -99,7 +113,7 @@ export const NavLogoText = styled.h1`
   @media screen and (width: 320px) {
     margin-left: 2.5rem;
     font-size: 1.2rem;
-    top: 0.2rem;
+    margin-top: 3vmin;
   }
 `;
 
@@ -192,6 +206,11 @@ export const NavLink = styled.a`
   }
   &:active {
     border-bottom: 3px solid #632626;
+  }
+
+  @media screen and (min-width: 1025px) {
+    padding: 1vmin 5.3vmin;
+    font-size: 3.5vmin;
   }
 
   @media screen and (max-width: 940px) {

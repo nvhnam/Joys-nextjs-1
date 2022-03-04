@@ -12,7 +12,7 @@ export const MenuContainer = styled.div`
 export const MenuWrapper = styled.div`
   width: 100%;
   height: 100%;
-  max-width: 1400px;
+  /* max-width: 1400px; */
   margin-top: 5rem;
   margin-bottom: 6rem;
   padding: 1rem 1rem;

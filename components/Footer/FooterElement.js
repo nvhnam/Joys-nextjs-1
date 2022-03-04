@@ -5,7 +5,7 @@ export const FooterContainer = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 12vh;
+  height: 14vh;
   background: #632626;
   margin-top: auto;
 
@@ -31,6 +31,10 @@ export const FooterText = styled.p`
   font-size: 1.2rem;
   text-align: center;
   color: #f8fffc;
+
+  @media screen and (min-width: 1025px) {
+    font-size: 4vmin;
+  }
 
   @media screen and (max-width: 1024px) {
     font-size: 1.3rem;

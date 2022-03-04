@@ -74,7 +74,7 @@ export const AboutContainer = styled.div`
 export const AboutWrapper = styled.div`
   width: 100%;
   height: 100%;
-  max-width: 1250px;
+  max-width: 1800px;
   margin: 6rem 0;
 
   @media screen and (max-width: 940px) {

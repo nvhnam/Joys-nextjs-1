@@ -7,7 +7,7 @@ const AppBackground = styled.div`
   display: block;
   width: 100%;
   height: 100%;
-  max-width: 2000px;
+  /* max-width: 2000px; */
   margin-bottom: -1rem;
   z-index: 2;
 `;

@@ -16,13 +16,17 @@ export const Home2Container = styled.div`
 export const Home2Wrapper = styled.div`
   height: 100%;
   width: 100%;
-  max-width: 1300px;
+  /* max-width: 1300px; */
 `;
 
 export const Home2Title = styled.h1`
   font-size: 3rem;
   color: #f8fffc;
   text-align: center;
+
+  @media screen and (min-width: 1025px) {
+    font-size: 9vmin;
+  }
 
   @media screen and (max-width: 767px) {
     font-size: 2rem;
@@ -37,6 +41,10 @@ export const Home2Underline1 = styled.div`
   margin-top: -1rem;
   border-bottom: 4px solid #772f1a;
   margin-bottom: 0.7rem;
+
+  @media screen and (min-width: 1025px) {
+    border-bottom: 1vmin solid #772f1a;
+  }
 
   @media screen and (max-width: 767px) {
     margin-bottom: 1rem;
@@ -76,6 +84,12 @@ export const Home2Buttons = styled.button`
     color: #772f1a;
   }
 
+  @media screen and (min-width: 1025px) {
+    font-size: 6vmin;
+    padding: 3vmin 15vmin;
+    margin: 4vmin 8vmin;
+  }
+
   @media screen and (max-width: 940px) {
     margin: 2rem 2rem;
   }
@@ -101,7 +115,7 @@ export const Home2Row = styled.div`
   padding-bottom: 6rem;
 
   @media screen and (min-width: 1025px) {
-    grid-gap: 2.5vmax;
+    grid-gap: 5vmin;
   }
 
   @media screen and (max-width: 1024px) {
@@ -118,15 +132,11 @@ export const Home2Row = styled.div`
 `;
 
 export const Home2MenuContainer = styled.div`
-  width: 100%;
+  width: auto;
   height: 100%;
   padding: 1.2rem 1.2rem;
   margin-left: auto;
   margin-right: auto;
-
-  @media screen and (min-width: 1500px) {
-    margin-left: -2vmax;
-  }
 `;
 
 export const Home2MenuWrapper = styled.div`
@@ -135,13 +145,8 @@ export const Home2MenuWrapper = styled.div`
   border-radius: 10px;
   overflow: hidden;
 
-  @media screen and (min-width: 1440px) {
-    /* margin-left: auto; */
-  }
-
   @media screen and (min-width: 1025px) {
-    width: 25vmax;
-    margin-left: 1.2vmax;
+    width: 55vmin;
   }
 
   @media screen and (max-width: 1024px) {
@@ -181,6 +186,10 @@ export const Home2MenuTitle = styled.h1`
   margin-bottom: -0.8rem;
   text-align: center;
 
+  @media screen and (min-width: 1025px) {
+    font-size: 6vmin;
+  }
+
   @media screen and (max-width: 940px) {
     font-size: 1.3rem;
   }
@@ -191,6 +200,10 @@ export const Home2MenuPrice = styled.p`
   /* color: #f8fffc; */
   color: #772f1a;
   text-align: center;
+
+  @media screen and (min-width: 1025px) {
+    font-size: 5.3vmin;
+  }
 
   @media screen and (max-width: 940px) {
     font-size: 1.2rem;
@@ -218,6 +231,12 @@ export const Home2MenuButton = styled.button`
     background: #772f1a;
     color: white;
     transition: all 0.2s ease-out;
+  }
+
+  @media screen and (min-width: 1025px) {
+    font-size: 5vmin;
+    padding: 2.3vmin 11vmin;
+    border: solid 0.5vmin #772f1a;
   }
 
   @media screen and (max-width: 1024px) {

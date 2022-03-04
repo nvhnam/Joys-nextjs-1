@@ -13,6 +13,7 @@ import {
   ContactCol2,
 } from "../components/Contact/ContactElement";
 import Contact1 from "../components/Contact/Contact1/Contact1";
+import Contact2 from "../components/Contact/Contact2/Contact2";
 
 export default function Contact() {
   return (
@@ -33,7 +34,9 @@ export default function Contact() {
             <ContactCol1>
               <Contact1 />
             </ContactCol1>
-            <ContactCol2></ContactCol2>
+            <ContactCol2>
+              <Contact2 />
+            </ContactCol2>
           </ContactRow>
         </ContactWrapper>
       </ContactContainer>
