@@ -16,6 +16,7 @@ export const MenuWrapper = styled.div`
   margin-top: 5rem;
   margin-bottom: 6rem;
   padding: 1rem 1rem;
+  min-height: 60vh;
 
   @media screen and (max-width: 1024px) {
     margin-top: 0rem;
@@ -47,10 +48,6 @@ export const MenuCol1 = styled.div`
     width: 100%;
     margin-bottom: -1rem;
   }
-
-  /* @media screen and (max-width: 767px) {
-    display: none;
-  } */
 `;
 
 export const MenuCol1Wrapper = styled.div`
@@ -147,10 +144,6 @@ export const MenuCol1Title = styled.button`
     text-align: left;
     outline: none;
     font-size: 1rem;
-
-    &:hover {
-      display: none;
-    }
   }
 
   @media screen and (min-height: 1024px) {

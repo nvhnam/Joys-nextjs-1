@@ -81,7 +81,6 @@ const Contact2 = () => {
                     latitude: 10.814896405699644,
                     zoom: 14.5,
                   }}
-                  // style={{ width: "42vmax", height: "28vmax" }}
                   style={{ width: "85vmin", height: "60vmin" }}
                   mapStyle="mapbox://styles/mapbox/streets-v11"
                   mapboxAccessToken={MAPBOX_TOKEN}
