@@ -5,12 +5,17 @@ export const Contact1Container = styled.div`
   height: 100%;
   background-color: #eec170;
   border-radius: 10px;
+  
 `;
 
 export const Contact1Wrapper = styled.div`
   width: 100%;
   height: 100%;
   padding: 1rem;
+
+  @media screen and (min-width: 1025px) {
+    padding: 2.6vmin;
+  }
 
   @media screen and (max-width: 940px) {
     padding: 0.8vmax;
@@ -23,6 +28,11 @@ export const Contact1Title = styled.h1`
   text-align: center;
   color: #772f1a;
   margin: 2rem 0;
+
+  @media screen and (min-width: 1025px) {
+    font-size: 6.8vmin;
+    margin: 5.5vmin 0;
+  }
 
   @media screen and (max-width: 940px) {
     font-size: 2.9vmax;
@@ -39,6 +49,10 @@ export const Contact1Form = styled.form`
   align-items: center;
   flex-direction: column;
 
+  @media screen and (min-width: 1025px) {
+    padding: 2.7vmin;
+  }
+
   @media screen and (max-width: 940px) {
     padding: 0.6vmax;
   }
@@ -52,6 +66,11 @@ export const Contact1Label = styled.input`
   border-radius: 10px;
   border: none;
   display: flex;
+
+  @media screen and (min-width: 1025px) {
+    padding: 2.3vmin;
+    font-size: 3vmin;
+  }
 
   @media screen and (max-width: 940px) {
     padding: 0.9vmax;
@@ -67,6 +86,11 @@ export const Contact1Span = styled.span`
   color: red;
   font-size: 1rem;
   padding: 0.8rem 0 1.5rem 0.5rem;
+
+  @media screen and (min-width: 1025px) {
+    font-size: 2.8vmin;
+    padding: 1.6vmin 0 2.8vmin 0.7vmin;
+  }
 
   @media screen and (max-width: 940px) {
     padding: 0.6vmax 0 1.5vmax 0.3vmax;
@@ -84,6 +108,14 @@ export const Contact1Message = styled.textarea`
   border: none;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
+
+  @media screen and (min-width: 1025px) {
+    padding: 1.8vmin;
+    font-size: 3vmin;
+    margin-top: 2.7vmin;
+    margin-bottom: 1.3vmin;
+    height: 34vmin;
+  }
 
   @media screen and (max-width: 940px) {
     margin-bottom: 0.3vmax;

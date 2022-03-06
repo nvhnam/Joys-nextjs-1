@@ -49,10 +49,13 @@ export default function About() {
                 <AboutCol2Para>
                   Mỗi một người trong JoyS Team đều mang những cá tính riêng, có
                   những hoài bão riêng cho đến khi gặp nhau thì lại có một ước
-                  mơ chung. Đó chính là JoyS. Ở JoyS chẳng bao giờ thiếu vắng
-                  tiếng cười và niềm vui cả. Bởi vì Team mình luôn tin tưởng
-                  rằng niềm vui là động lực để JoyS không chỉ là ngôi nhà chung
-                  của Team mà còn là một điều đặc biệt đối với bạn.
+                  mơ chung. Đó chính là JoyS.
+                </AboutCol2Para>
+                <AboutCol2Para>
+                  Ở JoyS chẳng bao giờ thiếu vắng tiếng cười và niềm vui cả. Bởi
+                  vì Team mình luôn tin tưởng rằng niềm vui là động lực để JoyS
+                  không chỉ là ngôi nhà chung của Team mà còn là một điều đặc
+                  biệt đối với bạn.
                 </AboutCol2Para>
               </AboutCol2Wrapper>
             </AboutCol2>

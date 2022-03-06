@@ -146,7 +146,7 @@ export const Home2MenuWrapper = styled.div`
   overflow: hidden;
 
   @media screen and (min-width: 1025px) {
-    width: 55vmin;
+    width: 60vmin;
   }
 
   @media screen and (max-width: 1024px) {

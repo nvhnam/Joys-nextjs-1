@@ -49,7 +49,8 @@ export const NavLogo = styled.div`
   cursor: pointer;
 
   @media screen and (min-width: 1025px) {
-    margin-left: 2vmax;
+    margin-left: 4.3vmin;
+    width: 11vmin;
   }
 
   @media screen and (max-width: 1024px) {
@@ -82,10 +83,10 @@ export const NavLogoText = styled.h1`
   @media screen and (min-width: 1025px) {
     /* top: -1vw; */
     /* margin-top: -1vmin; */
-    top: 1.5vmin;
-    font-size: 4.8vmin;
+    top: 1.3vmin;
+    font-size: 5vmin;
     left: auto;
-    margin-left: 20vmin;
+    margin-left: 18vmin;
   }
 
   @media screen and (max-width: 1024px) {
@@ -135,6 +136,11 @@ export const NavLogoImg = styled.div`
   background: white;
   border-radius: 50%;
   padding: 0.2rem;
+
+  @media screen and (min-width: 1025px) {
+    margin-left: 2.7vmin;
+    padding: 0.5vmin;
+  }
 
   @media screen and (max-width: 1024px) {
     margin-left: 1.7rem;
@@ -210,7 +216,7 @@ export const NavLink = styled.a`
 
   @media screen and (min-width: 1025px) {
     padding: 1vmin 5.3vmin;
-    font-size: 3.5vmin;
+    font-size: 3.4vmin;
   }
 
   @media screen and (max-width: 940px) {

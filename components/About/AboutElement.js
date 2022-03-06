@@ -74,8 +74,9 @@ export const AboutContainer = styled.div`
 export const AboutWrapper = styled.div`
   width: 100%;
   height: 100%;
-  max-width: 1800px;
+  max-width: 2300px;
   margin: 6rem 0;
+  min-height: 60vh;
 
   @media screen and (max-width: 940px) {
     margin: 7rem 0;
@@ -93,7 +94,7 @@ export const AboutRow = styled.div`
   padding: 1rem 2rem;
 
   @media screen and (min-width: 1025px) {
-    padding: 1rem 5vmax;
+    padding: 3vmin 13vmin;
   }
 
   @media screen and (max-width: 767px) {
@@ -107,6 +108,10 @@ export const AboutCol1 = styled.div`
   align-items: center;
   width: 50%;
   height: auto;
+  
+  @media screen and (min-width: 1025px) {
+    padding-right: 4vmin;
+  }
 
   @media screen and (max-width: 767px) {
     width: 100%;
@@ -133,6 +138,10 @@ export const AboutCol2 = styled.div`
   justify-content: center;
   margin-left: 5rem;
 
+  @media screen and (min-width: 1025px) {
+    padding-left: 4vmin;
+  }
+
   @media screen and (max-width: 767px) {
     width: 100%;
     padding: 1rem;
@@ -148,7 +157,7 @@ export const AboutCol2Wrapper = styled.div`
   border-radius: 10px;
 
   @media screen and (min-width: 1025px) {
-    padding: 3vmax;
+    padding: 7vmin;
   }
 
   @media screen and (max-width: 1024px) {
@@ -172,7 +181,8 @@ export const AboutCol2Title = styled.h1`
   text-align: center;
 
   @media screen and (min-width: 1025px) {
-    margin-bottom: 5vmax;
+    margin-bottom: 10vmin;
+    font-size: 9.5vmin;
   }
 
   @media screen and (max-width: 1024px) {
@@ -195,6 +205,11 @@ export const AboutCol2Title = styled.h1`
 export const AboutCol2Para = styled.p`
   font-size: 1.3rem;
   color: #f8fffc;
+
+  @media screen and (min-width: 1025px) {
+    font-size: 4vmin;
+    margin-bottom: 1vmin;
+  }
 
   @media screen and (max-width: 940px) {
     font-size: 1rem;

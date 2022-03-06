@@ -35,6 +35,11 @@ export const HomeRow2 = styled.div`
 
   @media screen and (min-width: 1025px) {
     padding: 5vmin 5vmin;
+    margin: 12vmin 0;
+  }
+
+  @media screen and (max-width: 940px) {
+    margin: 3rem 0;
   }
 
   @media screen and (max-width: 767px) {
@@ -83,10 +88,11 @@ export const HomeCol12Wrapper = styled.div`
   padding: 2rem;
   background-color: rgba(0, 0, 0, 0.63);
   border-radius: 15px;
-  margin-bottom: 5rem;
   margin-top: 1.7rem;
+  margin-bottom: 5rem;
 
   @media screen and (min-width: 1025px) {
+    margin-bottom: 14vmin;
     padding: 5vmin;
     margin-top: 6vmin;
   }
@@ -117,7 +123,7 @@ export const HomeCol12Text2 = styled.h1`
 `;
 
 export const HomeCol12Para = styled.p`
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: #f8fffc;
   margin-bottom: 2rem;
 
@@ -158,7 +164,8 @@ export const HomeCol2 = styled.div`
   /* flex-direction: column; */
 
   @media screen and (min-width: 1025px) {
-    margin-right: -0.5vmax;
+    padding-left: 15vmin;
+    margin-right: -1vmin;
   }
 
   @media screen and (max-width: 1024px) {
@@ -210,6 +217,11 @@ export const HomeCol2Wrapper = styled.div`
   padding: 2rem;
   margin-top: -3.5rem;
 
+  @media screen and (min-width: 1025px) {
+    padding: 5.7vmin;
+    margin-top: -9vmin;
+  }
+
   @media screen and (max-width: 767px) {
     padding: 1rem;
     width: auto;
@@ -241,8 +253,8 @@ export const HomeCol2Underline = styled.div`
 
   @media screen and (min-width: 1025px) {
     border-bottom: 1vmin solid #772f1a;
-    margin-top: -4.4vmin;
-    margin-bottom: 4vmin;
+    margin-top: -5.4vmin;
+    margin-bottom: 3vmin;
   }
 
   @media screen and (max-width: 767px) {

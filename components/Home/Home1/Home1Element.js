@@ -5,7 +5,6 @@ export const Home1Container = styled.div`
   width: 100%;
   display: flex;
   flex-direction: row;
-  margin-bottom: -10rem;
 `;
 
 export const HomeImg = styled.div`
@@ -13,7 +12,6 @@ export const HomeImg = styled.div`
   width: 100%;
   height: 100%;
   position: relative;
-  margin-bottom: 10rem;
 `;
 
 export const HomeRow1 = styled.div`
@@ -22,7 +20,6 @@ export const HomeRow1 = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  /* padding: 1rem; */
   position: absolute;
   background: rgba(0, 0, 0, 0.68);
   text-align: center;
@@ -36,11 +33,15 @@ export const HomeRow1 = styled.div`
 export const HomeRow1Wrapper = styled.div`
   width: 100%;
   height: 100%;
-  max-width: 1440px;
+  /* max-width: 1440px; */
   padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   @media screen and (min-width: 1025px) {
-    padding: 4vw;
+    padding: 15vmin;
   }
 
   @media screen and (max-width: 767px) {
@@ -56,8 +57,9 @@ export const HomeText1 = styled.h1`
   letter-spacing: 10px;
 
   @media screen and (min-width: 1025px) {
-    font-size: 13vmax;
-    margin: -2vmax;
+    font-size: 31vmin;
+    margin: -3vmin;
+    letter-spacing: 2vmin;
   }
 
   @media screen and (max-width: 1024px) {
@@ -67,7 +69,7 @@ export const HomeText1 = styled.h1`
 
   @media screen and (max-width: 940px) {
     font-size: 5rem;
-    margin: -1.8rem;
+    margin: -1vmin;
   }
 
   @media screen and (max-width: 767px) {
@@ -87,6 +89,10 @@ export const HomeText1 = styled.h1`
 export const HomeText2 = styled.h1`
   font-size: 2rem;
   color: #f8fffc;
+
+  @media screen and (min-width: 1025px) {
+    font-size: 6.3vmin;
+  }
 
   @media screen and (max-width: 1024px) {
     font-size: 1.8rem;
@@ -110,6 +116,10 @@ export const HomePara = styled.p`
   color: #f8fffc;
   margin: 1rem 0;
   margin-bottom: 2rem;
+
+  @media screen and (min-width: 1025px) {
+    font-size: 4.7vmin;
+  }
 
   @media screen and (max-width: 1024px) {
     font-size: 1.5rem;

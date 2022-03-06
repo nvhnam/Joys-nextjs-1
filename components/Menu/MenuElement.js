@@ -16,7 +16,7 @@ export const MenuWrapper = styled.div`
   margin-top: 5rem;
   margin-bottom: 6rem;
   padding: 1rem 1rem;
-  min-height: 60vh;
+  min-height: 70vh;
 
   @media screen and (max-width: 1024px) {
     margin-top: 0rem;
@@ -200,6 +200,12 @@ export const MenuCol2Title = styled.div`
   color: #f8fffc;
   margin-bottom: 2rem;
   margin-top: 2rem;
+
+  
+  @media screen and (min-width: 1025px) {
+    font-size: 8vmin;
+    margin-bottom: 7vmin;
+  }
 
   @media screen and (max-width: 940px) {
     font-size: 3.5vmax;
