@@ -18,7 +18,7 @@ export const HomeWrapper = styled.div`
   justify-content: center;
   position: relative;
   flex-direction: column;
-  z-index: 2;
+  z-index: 2; 
 `;
 
 export const HomeRow2 = styled.div`
@@ -60,6 +60,7 @@ export const HomeCol1 = styled.div`
 
   @media screen and (min-width: 1025px) {
     margin-left: 4.5vmin;
+    padding: 0 2vmax;
   }
 
   @media screen and (max-width: 1024px) {
@@ -164,8 +165,10 @@ export const HomeCol2 = styled.div`
   /* flex-direction: column; */
 
   @media screen and (min-width: 1025px) {
-    padding-left: 15vmin;
-    margin-right: -1vmin;
+    /* padding-left: 15vmin; */
+    margin-right: 0;
+    padding: 0 5vmax;
+    overflow: hidden;
   }
 
   @media screen and (max-width: 1024px) {
@@ -235,6 +238,7 @@ export const HomeCol2Text1 = styled.h1`
 
   @media screen and (min-width: 1025px) {
     font-size: 10vmin;
+    
   }
 
   @media screen and (max-width: 767px) {

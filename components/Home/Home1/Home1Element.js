@@ -41,7 +41,8 @@ export const HomeRow1Wrapper = styled.div`
   justify-content: center;
 
   @media screen and (min-width: 1025px) {
-    padding: 15vmin;
+    /* padding: 15vmin; */
+    padding: 11vmax;
   }
 
   @media screen and (max-width: 767px) {
@@ -57,9 +58,11 @@ export const HomeText1 = styled.h1`
   letter-spacing: 10px;
 
   @media screen and (min-width: 1025px) {
-    font-size: 31vmin;
+    /* font-size: 31vmin; */
     margin: -3vmin;
     letter-spacing: 2vmin;
+
+    font-size: 11vmax;
   }
 
   @media screen and (max-width: 1024px) {
@@ -91,7 +94,9 @@ export const HomeText2 = styled.h1`
   color: #f8fffc;
 
   @media screen and (min-width: 1025px) {
-    font-size: 6.3vmin;
+    /* font-size: 6.3vmin; */
+
+    font-size: 3vmax;
   }
 
   @media screen and (max-width: 1024px) {
@@ -118,7 +123,9 @@ export const HomePara = styled.p`
   margin-bottom: 2rem;
 
   @media screen and (min-width: 1025px) {
-    font-size: 4.7vmin;
+    /* font-size: 4.7vmin; */
+
+    font-size: 2.4vmax;
   }
 
   @media screen and (max-width: 1024px) {
@@ -143,26 +150,26 @@ export const HomePara = styled.p`
   }
 `;
 
-export const HomeLink = styled.a`
-  font-size: 1.7rem;
-  color: gold;
-  margin-left: 0.5rem;
-  font-style: italic;
-  text-decoration: underline;
+// export const HomeLink = styled.a`
+//   font-size: 1.7rem;
+//   color: gold;
+//   margin-left: 0.5rem;
+//   font-style: italic;
+//   text-decoration: underline;
 
-  @media screen and (max-width: 1024px) {
-    font-size: 1.5rem;
-  }
+//   @media screen and (max-width: 1024px) {
+//     font-size: 1.5rem;
+//   }
 
-  @media screen and (max-width: 940px) {
-    font-size: 1.2rem;
-  }
+//   @media screen and (max-width: 940px) {
+//     font-size: 1.2rem;
+//   }
 
-  @media screen and (max-width: 767px) {
-    font-size: 0.8rem;
-    margin-left: 0.2rem;
-  }
-  @media screen and (max-width: 320px) {
-    font-size: 0.7rem;
-  }
-`;
+//   @media screen and (max-width: 767px) {
+//     font-size: 0.8rem;
+//     margin-left: 0.2rem;
+//   }
+//   @media screen and (max-width: 320px) {
+//     font-size: 0.7rem;
+//   }
+// `;

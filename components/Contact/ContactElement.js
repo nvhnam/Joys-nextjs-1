@@ -7,6 +7,10 @@ export const ContactContainer = styled.div`
   background: #f4a75d;
   width: 100%;
   height: 100%;
+
+  @media screen and (min-width: 1025px) {
+    padding: 0 4vmax;
+  }
 `;
 
 export const ContactWrapper = styled.div`
@@ -52,7 +56,7 @@ export const ContactCol1 = styled.div`
 `;
 
 export const ContactCol2 = styled.div`
-  width: 50%;
+  width: auto;
   height: 100%;
 
   @media screen and (max-width: 767px) {

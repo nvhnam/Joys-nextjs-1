@@ -10,7 +10,8 @@ export const BannerContainer = styled.div`
   overflow: hidden;
 
   @media screen and (min-width: 1025px) {
-    height: 60vmin;
+    /* height: 60vmin; */
+    height: 30vmax;
   }
 
   @media screen and (max-width: 1024px) {
@@ -33,8 +34,8 @@ export const PageBannerTitle = styled.h1`
   letter-spacing: 0.5rem;
 
   @media screen and (min-width: 1025px) {
-    font-size: 13vmin;
-    padding-top: 12vmin;
+    top: 10%;
+    font-size: 6vmax;
   }
 
   @media screen and (max-width: 1024px) {
@@ -69,6 +70,10 @@ export const AboutContainer = styled.div`
   align-items: center;
   justify-content: center;
   background: #f4a75d;
+
+  @media screen and (min-width: 1025px) {
+    padding: 0 3vmax;
+  }
 `;
 
 export const AboutWrapper = styled.div`

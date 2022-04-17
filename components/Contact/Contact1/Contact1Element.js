@@ -5,7 +5,7 @@ export const Contact1Container = styled.div`
   height: 100%;
   background-color: #eec170;
   border-radius: 10px;
-  
+
 `;
 
 export const Contact1Wrapper = styled.div`

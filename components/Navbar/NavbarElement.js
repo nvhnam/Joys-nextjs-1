@@ -30,13 +30,14 @@ export const Nav = styled.nav`
 export const NavContainer = styled.div`
   height: 81px;
   width: 100%;
-  max-width: 2400px;
+  /* max-width: 2400px; */
   display: flex;
   justify-items: space-between;
   align-content: center;
 
   @media screen and (min-width: 1025px) {
     height: auto;
+    padding: 2vmax;
   }
 `;
 
@@ -49,8 +50,9 @@ export const NavLogo = styled.div`
   cursor: pointer;
 
   @media screen and (min-width: 1025px) {
-    margin-left: 4.3vmin;
+    margin-left: 4vmin;
     width: 11vmin;
+    width: 4vmax;
   }
 
   @media screen and (max-width: 1024px) {
@@ -86,7 +88,8 @@ export const NavLogoText = styled.h1`
     top: 1.3vmin;
     font-size: 5vmin;
     left: auto;
-    margin-left: 18vmin;
+    /* margin-left: 17.5vmin; */
+    margin-left: 8vmax;
   }
 
   @media screen and (max-width: 1024px) {
@@ -138,8 +141,7 @@ export const NavLogoImg = styled.div`
   padding: 0.2rem;
 
   @media screen and (min-width: 1025px) {
-    margin-left: 2.7vmin;
-    padding: 0.5vmin;
+    margin-left: 2.7vmin;  
   }
 
   @media screen and (max-width: 1024px) {
@@ -215,8 +217,10 @@ export const NavLink = styled.a`
   }
 
   @media screen and (min-width: 1025px) {
-    padding: 1vmin 5.3vmin;
-    font-size: 3.4vmin;
+    /* padding: 1vmin 5.3vmin; */
+    /* font-size: 3.4vmin; */
+    padding: 1vmin 1.8vw;
+    font-size: 1.6vw;
   }
 
   @media screen and (max-width: 940px) {

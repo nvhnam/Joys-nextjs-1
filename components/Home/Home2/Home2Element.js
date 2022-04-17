@@ -16,7 +16,6 @@ export const Home2Container = styled.div`
 export const Home2Wrapper = styled.div`
   height: 100%;
   width: 100%;
-  /* max-width: 1300px; */
 `;
 
 export const Home2Title = styled.h1`
@@ -58,6 +57,7 @@ export const Home2ButtonWrapper = styled.div`
   width: 100%;
   height: 100%;
   margin-bottom: 1rem;
+
 `;
 
 export const Home2Buttons = styled.button`
@@ -85,9 +85,11 @@ export const Home2Buttons = styled.button`
   }
 
   @media screen and (min-width: 1025px) {
-    font-size: 6vmin;
-    padding: 3vmin 15vmin;
-    margin: 4vmin 8vmin;
+    font-size: 5vmin;
+    /* padding: 3vmin 15vmin;
+    margin: 4vmin 8vmin; */
+    padding: 1vmax 6vmax;
+    margin: 2vmax 4vmax;
   }
 
   @media screen and (max-width: 940px) {
@@ -116,6 +118,7 @@ export const Home2Row = styled.div`
 
   @media screen and (min-width: 1025px) {
     grid-gap: 5vmin;
+    padding: 3vmax;
   }
 
   @media screen and (max-width: 1024px) {
@@ -137,6 +140,7 @@ export const Home2MenuContainer = styled.div`
   padding: 1.2rem 1.2rem;
   margin-left: auto;
   margin-right: auto;
+
 `;
 
 export const Home2MenuWrapper = styled.div`
@@ -146,7 +150,8 @@ export const Home2MenuWrapper = styled.div`
   overflow: hidden;
 
   @media screen and (min-width: 1025px) {
-    width: 60vmin;
+    /* width: 50vmin; */
+    width: 25vmax;
   }
 
   @media screen and (max-width: 1024px) {

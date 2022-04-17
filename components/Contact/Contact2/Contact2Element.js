@@ -146,6 +146,26 @@ export const Contact2Col1Detail = styled.p`
   }
 `;
 
+export const Contact2Col1WorkHour = styled.p`
+  display: flex;
+  font-size: 1rem;
+  font-weight: bold;
+  align-items: center;
+  color: #772f1a;
+
+  @media screen and (min-width: 1025px) {
+    font-size: 3.1vmin;
+  }
+
+  @media screen and (max-width: 940px) {
+    font-size: 2.2vmin;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 3.8vmin;
+  }
+`;
+
 export const Contact2Col2 = styled.div`
   width: 100%;
   height: 100%;
