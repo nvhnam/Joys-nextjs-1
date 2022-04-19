@@ -144,10 +144,13 @@ export const Home2MenuContainer = styled.div`
 `;
 
 export const Home2MenuWrapper = styled.div`
-  background: #eec170;
+  /* background: #eec170; */
   width: 20rem;
   border-radius: 10px;
   overflow: hidden;
+  background: #f8fffc;
+  /* background-color: rgba(255, 255, 255, 0.9); */
+  /* opacity: 0.93; */
 
   @media screen and (min-width: 1025px) {
     /* width: 50vmin; */
@@ -188,6 +191,7 @@ export const Home2MenuImg = styled.div`
 export const Home2MenuTitle = styled.h1`
   font-size: 1.8rem;
   color: #772f1a;
+  /* color: #eec170; */
   margin-bottom: -0.8rem;
   text-align: center;
 
@@ -204,6 +208,7 @@ export const Home2MenuPrice = styled.p`
   font-size: 1.5rem;
   /* color: #f8fffc; */
   color: #772f1a;
+  /* color: #eec170; */
   text-align: center;
 
   @media screen and (min-width: 1025px) {

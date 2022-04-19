@@ -82,6 +82,7 @@ export const MenuColTitle = styled.div`
     font-weight: bold;
     margin-left: 1rem;
     color: black;
+    color: #772f1a;
     transition: all 0.2s ease-in-out;
     top: 0;
     left: auto;
@@ -120,7 +121,7 @@ export const MenuCol1Title = styled.button`
   border: none;
   font-weight: bold;
   margin-left: 1rem;
-  color: black;
+  color: #772f1a;
   transition: all 0.2s ease-in-out;
 
   &:hover {
@@ -242,7 +243,8 @@ export const MenuCol2ListContainer = styled.div`
 `;
 
 export const MenuCol2ListWrapper = styled.div`
-  background: #eec170;
+  /* background: #eec170; */
+  background: #f8fffc;
   width: 18.7vmax;
   border-radius: 10px;
   overflow: hidden;
@@ -282,6 +284,7 @@ export const MenuCol2ListTitle = styled.h1`
 export const MenuCol2ListDescr = styled.p`
   font-size: 1.2vmax;
   text-align: center;
+  color: #772f1a;
   margin: -0.5vmax auto;
 `;
 

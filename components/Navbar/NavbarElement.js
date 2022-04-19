@@ -34,10 +34,17 @@ export const NavContainer = styled.div`
   display: flex;
   justify-items: space-between;
   align-content: center;
+  /* position: relative; */
 
   @media screen and (min-width: 1025px) {
     height: auto;
     padding: 2vmax;
+  }
+
+  @media screen and (max-width: 767px) {
+    justify-items: center;
+    justify-content: center;
+    justify-self: center;
   }
 `;
 
@@ -47,6 +54,7 @@ export const NavLogo = styled.div`
   align-self: center;
   width: 4.3rem;
   height: auto;
+  /* position: relative; */
   cursor: pointer;
 
   @media screen and (min-width: 1025px) {
@@ -60,8 +68,16 @@ export const NavLogo = styled.div`
   }
 
   @media screen and (max-width: 767px) {
-    width: 4rem;
-    margin-left: 8.35rem;
+    /* width: 4rem;
+    margin-left: 8.35rem; */
+    display: flex;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 6vmin; */
   }
 `;
 
@@ -103,11 +119,21 @@ export const NavLogoText = styled.h1`
   }
 
   @media screen and (max-width: 767px) {
-    margin-top: 2vmin;
+    /* margin-top: 2vmin; */
     letter-spacing: 5px;
     word-spacing: 1.4rem;
+    /* word-spacing: 7vmin; */
+    word-spacing: 3.5vmax;
+    /* display: flex; */
+    /* left: 3.7vmax; */
+    top: 20%;
+    margin-left: 8vmax;
+    /* margin: -20vmin; */
     font-size: 1.3rem;
-    margin-left: 4.1rem;
+    /* top: 20%; */
+    /* justify-items: center; */
+    z-index: 12;
+    /* margin-left: 4.1rem; */
   }
 
   @media screen and (width: 414px) {
@@ -141,7 +167,7 @@ export const NavLogoImg = styled.div`
   padding: 0.2rem;
 
   @media screen and (min-width: 1025px) {
-    margin-left: 2.7vmin;  
+    margin-left: 2.7vmin;
   }
 
   @media screen and (max-width: 1024px) {
@@ -149,7 +175,15 @@ export const NavLogoImg = styled.div`
   }
 
   @media screen and (max-width: 767px) {
-    margin-left: 1.5rem;
+    /* margin-left: 1.5rem; */
+    z-index: 15;
+    position: relative;
+    /* width: 7%; */
+    /* width: 3.5rem; */
+    width: 7vmax;
+    margin-left: 6vmin;
+    height: auto;
+    /* position: absolute; */
   }
 
   @media screen and (width: 414px) {
@@ -220,7 +254,7 @@ export const NavLink = styled.a`
     /* padding: 1vmin 5.3vmin; */
     /* font-size: 3.4vmin; */
     padding: 1vmin 1.8vw;
-    font-size: 1.6vw;
+    font-size: 1.5vw;
   }
 
   @media screen and (max-width: 940px) {
