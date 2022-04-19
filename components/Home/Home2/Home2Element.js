@@ -225,12 +225,14 @@ export const Home2MenuButton = styled.button`
   padding: 14px 60px;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #772f1a;
-  /* background-color: #772f1a; */
+  /* color: #772f1a; */
+  color: #f8fffc;
+  background-color: #772f1a;
   /* background-color: transparent; */
-  background: #eec170;
+  /* background: #eec170; */
+  /* background: #f8fffc; */
   border-radius: 10px;
-  border: solid 3px #772f1a;
+  border: solid 3px #f8fffc;
   margin: -1.3rem auto 3rem auto;
   text-align: center;
   cursor: pointer;
@@ -238,15 +240,16 @@ export const Home2MenuButton = styled.button`
   transition: all 0.2s ease-in;
 
   &:hover {
-    background: #772f1a;
-    color: white;
+    background: #f8fffc;
+    border: solid 0.7vmin #772f1a;
+    color: #772f1a;
     transition: all 0.2s ease-out;
   }
 
   @media screen and (min-width: 1025px) {
     font-size: 5vmin;
     padding: 2.3vmin 11vmin;
-    border: solid 0.5vmin #772f1a;
+    border: solid 0.7vmin #f8fffc;
   }
 
   @media screen and (max-width: 1024px) {
