@@ -22,7 +22,6 @@ function MyApp({ Component, pageProps }) {
         width: "auto",
         height: "auto",
         backgroundColor: "#f8fffc",
-        overflowY: "hidden",
       }}
     >
       {loading ? (
