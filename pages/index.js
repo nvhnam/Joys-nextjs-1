@@ -26,6 +26,7 @@ import Home1 from "../components/Home/Home1/Home1";
 import React from "react";
 import Home2 from "../components/Home/Home2/Home2";
 import HeroSection from "../components/HeroSection/HeroSection";
+import Home3 from "../components/Home/Home3/Home3";
 
 export default function Home() {
   return (
@@ -126,6 +127,8 @@ export default function Home() {
           </HomeRow2>
           {/* Home Menu */}
           <Home2 />
+          {/* Home Post 1 */}
+          {/* <Home3 /> */}
           {/* Home Contact */}
         </HomeWrapper>
       </HomeContainer>

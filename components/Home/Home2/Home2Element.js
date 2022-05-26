@@ -7,6 +7,8 @@ export const Home2Container = styled.div`
   align-items: center;
   justify-content: center;
   margin-top: -3rem;
+  z-index: 2;
+  position: relative;
 
   @media screen and (max-width: 767px) {
     margin-top: -1rem;
@@ -57,7 +59,6 @@ export const Home2ButtonWrapper = styled.div`
   width: 100%;
   height: 100%;
   margin-bottom: 1rem;
-
 `;
 
 export const Home2Buttons = styled.button`
@@ -97,7 +98,7 @@ export const Home2Buttons = styled.button`
   }
 
   @media screen and (max-width: 767px) {
-    padding: 7px 20px;
+    padding: 7px 15px;
     margin: 1.2rem 1rem;
     margin-left: 1.3rem;
     font-size: 1.25rem;
@@ -140,7 +141,6 @@ export const Home2MenuContainer = styled.div`
   padding: 1.2rem 1.2rem;
   margin-left: auto;
   margin-right: auto;
-
 `;
 
 export const Home2MenuWrapper = styled.div`
@@ -233,7 +233,7 @@ export const Home2MenuButton = styled.button`
   /* background: #f8fffc; */
   border-radius: 10px;
   border: solid 3px #f8fffc;
-  margin: -1.3rem auto 3rem auto;
+  margin: -0.5rem auto 3rem auto;
   text-align: center;
   cursor: pointer;
   outline: none;
