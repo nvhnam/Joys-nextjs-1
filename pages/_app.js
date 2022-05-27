@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 3140);
+    }, 3337);
   }, []);
 
   return (
