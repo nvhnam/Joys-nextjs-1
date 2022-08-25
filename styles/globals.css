@@ -39,14 +39,33 @@ a {
 
 .Home3Img1 {
   background-image: url("../public/img/Banner1.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: 0vw -2vw;
   background-attachment: fixed;
 }
 
-/* video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+@media screen and (min-width: 1025px) {
+  .Home3Img1 {
+    background-position: 0vw -7vmin;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Home3Img1 {
+    background-attachment: scroll;
+    background-position: 0vw -18.2vmin;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .Home3Img1 {
+    background-position: 0vw -19vmin;
+  }
+}
+
+/* @media screen and (min-width: 1025px) {
+  .Home3Img1 {
+
+  }
 } */

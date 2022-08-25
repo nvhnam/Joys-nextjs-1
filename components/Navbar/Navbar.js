@@ -39,8 +39,8 @@ const Navbar = ({ toggle }) => {
         <NavContainer>
           <Link href="/" passHref>
             <NavLogo>
-              <NavLogoText>coffee & bakery</NavLogoText>
-              <NavLogoImg>
+              <NavLogoText scrollNav={scrollNav}>coffee & bakery</NavLogoText>
+              <NavLogoImg scrollNav={scrollNav}>
                 <Image
                   className="NavLogo"
                   src={logoTrans1}
@@ -56,16 +56,16 @@ const Navbar = ({ toggle }) => {
           <NavMenu>
             <NavItem>
               <Link href="/" passHref>
-                <NavLink>HOME</NavLink>
+                <NavLink scrollNav={scrollNav}>HOME</NavLink>
               </Link>
               <Link href="/about" passHref>
-                <NavLink>ABOUT</NavLink>
+                <NavLink scrollNav={scrollNav}>ABOUT</NavLink>
               </Link>
               <Link href="/menu" passHref>
-                <NavLink>MENU</NavLink>
+                <NavLink scrollNav={scrollNav}>MENU</NavLink>
               </Link>
               <Link href="/contact" passHref>
-                <NavLink>CONTACT</NavLink>
+                <NavLink scrollNav={scrollNav}>CONTACT</NavLink>
               </Link>
             </NavItem>
           </NavMenu>

@@ -8,33 +8,33 @@ export const Button = styled.button`
   display: flex;
   justify-content: center;
   align-content: center;
-  border: ${({ withBorder }) => (withBorder ? "2px solid black" : "none")};
+  border: ${({ withBorder }) => (withBorder ? "2px solid #585123" : "none")};
   border-radius: 20px;
   cursor: pointer;
-  color: ${({ isBlack }) => (isBlack ? "black" : "white")};
+  color: ${({ isBlack }) => (isBlack ? "#585123" : "white")};
   padding: ${({ isBig }) => (isBig ? "15px 75px" : "10px 29px")};
   background-color: ${({ isWhite }) => (isWhite ? "white" : "#772f1a")};
   font-size: ${({ bigFont }) => (bigFont ? "26px" : "17px")};
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    background-color: ${({ isWhite }) => (isWhite ? "black" : "white")};
+    background-color: ${({ isWhite }) => (isWhite ? "#585123" : "white")};
     color: ${({ isBlack }) => (isBlack ? "white" : "black")};
-    border: none;
+    /* border: none; */
   }
 
   @media screen and (min-width: 1025px) {
     padding: ${({ isBig }) => (isBig ? "2.4.5vmin 12vmin" : "1.9vmin 7vmin")};
-    font-size: ${({ bigFont }) => (bigFont ? "4.7vmin" : "4vmin")};
+    font-size: ${({ bigFont }) => (bigFont ? "4.7vmin" : "3vmin")};
   }
 
   @media screen and (max-width: 940px) {
-    padding: 0.5vmax 1.8vmax;
+    padding: 0.8vmax 2.3vmax;
     font-size: 1.5vmax;
   }
 
   @media screen and (max-width: 767px) {
-    padding: 1vmax 4.7vmax;
-    font-size: 1.9vmax;
+    padding: 1vmax 3vmax;
+    font-size: 1.75vmax;
   }
 `;

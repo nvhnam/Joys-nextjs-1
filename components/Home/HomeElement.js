@@ -6,7 +6,8 @@ export const HomeContainer = styled.div`
   justify-content: center;
   height: 100%;
   width: 100%;
-  background: #f4a75d;
+  /* background: #f4a75d; */
+  background: #f8fffc;
   z-index: 2;
 `;
 
@@ -18,7 +19,7 @@ export const HomeWrapper = styled.div`
   justify-content: center;
   position: relative;
   flex-direction: column;
-  z-index: 2; 
+  z-index: 2;
 `;
 
 export const HomeRow2 = styled.div`
@@ -86,50 +87,75 @@ export const HomeCol1Wrapper = styled.div`
 export const HomeCol12Wrapper = styled.div`
   width: 100%;
   height: auto;
-  padding: 2rem;
-  background-color: rgba(0, 0, 0, 0.63);
+  /* padding: 2rem; */
+  /* background-color: rgba(0, 0, 0, 0.33); */
   border-radius: 15px;
   margin-top: 1.7rem;
   margin-bottom: 5rem;
 
   @media screen and (min-width: 1025px) {
     margin-bottom: 14vmin;
-    padding: 5vmin;
+    padding: 1vmin;
     margin-top: 6vmin;
   }
 
   @media screen and (max-width: 767px) {
     padding: 1rem;
     margin-bottom: 2.5rem;
+    margin-top: -1vmax;
   }
 `;
 
 export const HomeCol12Text1 = styled.h1`
   font-size: 1rem;
-  color: #f8fffc;
+  /* color: #f8fffc; */
+  color: #f58549;
+  /* color: #772f1a; */
   font-style: italic;
 
   @media screen and (min-width: 1025px) {
-    font-size: 4.5vmin;
+    font-size: 4.2vmin;
+  }
+
+  @media screen and (max-width: 1024px) {
+    font-size: 2vmax;
+  }
+
+  @media screen and (max-width: 830px) {
+    margin-top: 4vmax;
+  }
+
+  @media screen and (max-width: 767x) {
+    margin-top: 0vmax;
   }
 `;
 
 export const HomeCol12Text2 = styled.h1`
-  font-size: 1.3rem;
-  color: #f8fffc;
+  font-size: 1.1rem;
+  /* color: #f8fffc; */
+  color: black;
 
   @media screen and (min-width: 1025px) {
-    font-size: 6vmin;
+    font-size: 5.4vmin;
+  }
+
+  @media screen and (max-width: 1024px) {
+    font-size: 2.2vmax;
   }
 `;
 
 export const HomeCol12Para = styled.p`
   font-size: 0.8rem;
-  color: #f8fffc;
+  /* color: #f8fffc; */
+  color: black;
   margin-bottom: 2rem;
 
   @media screen and (min-width: 1025px) {
-    font-size: 3.6vmin;
+    font-size: 3.2vmin;
+  }
+
+  @media screen and (max-width: 1024px) {
+    font-size: 1.6vmax;
   }
 
   @media screen and (max-width: 767px) {
@@ -205,7 +231,7 @@ export const HomeCol21Img = styled.div`
   margin-top: -1.3rem;
 
   @media screen and (min-width: 1025px) {
-    margin-top: -2vmin;
+    /* margin-top: -2vmin; */
   }
 
   @media screen and (max-width: 767px) {
@@ -232,13 +258,18 @@ export const HomeCol2Wrapper = styled.div`
 `;
 
 export const HomeCol2Text1 = styled.h1`
-  font-size: 3rem;
-  color: #f8fffc;
+  font-size: 2.5rem;
+  /* color: #f8fffc; */
+  color: #f58549;
   margin-top: 0.5rem;
 
   @media screen and (min-width: 1025px) {
-    font-size: 10vmin;
-    
+    font-size: 8vmin;
+  }
+
+  @media screen and (max-width: 1024px) {
+    font-size: 4.1vmax;
+    margin-top: 2.8vmax;
   }
 
   @media screen and (max-width: 767px) {
@@ -252,13 +283,21 @@ export const HomeCol2Underline = styled.div`
   display: block;
   width: 70%;
   margin-top: -1.5rem;
-  border-bottom: 4px solid #772f1a;
+  border-bottom: 4px solid #f58549;
   margin-bottom: 0.7rem;
 
   @media screen and (min-width: 1025px) {
-    border-bottom: 1vmin solid #772f1a;
+    border-bottom: 1vmin solid #f58549;
     margin-top: -5.4vmin;
-    margin-bottom: 3vmin;
+    margin-bottom: -3vmin;
+  }
+
+  @media screen and (max-width: 1024px) {
+    margin-bottom: -2vmax;
+  }
+
+  @media screen and (max-width: 830px) {
+    margin-bottom: -4.6vmax;
   }
 
   @media screen and (max-width: 767px) {

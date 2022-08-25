@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Nav = styled.nav`
   height: 81px;
   width: 100%;
-  /* background: #772f1a; */
   font-size: 1rem;
   display: flex;
   justify-content: center;
@@ -13,8 +12,12 @@ export const Nav = styled.nav`
   z-index: 10;
   position: sticky;
   margin-top: -81px;
-  background: ${({ scrollNav }) => (scrollNav ? "#772f1a" : "transparent")};
+  /* background: ${({ scrollNav }) =>
+    scrollNav ? "#772f1a" : "transparent"}; */
+  background: ${({ scrollNav }) => (scrollNav ? "white" : "transparent")};
   transition: all 0.3s ease-in-out;
+  box-shadow: ${({ scrollNav }) =>
+    scrollNav ? "5px 5px 15px 5px rgba(0, 0, 0, 10%)" : "none"};
 
   @media screen and (min-width: 1025px) {
     height: 14vmin;
@@ -23,7 +26,8 @@ export const Nav = styled.nav`
 
   @media screen and (max-width: 767px) {
     margin-top: 0;
-    background: #772f1a;
+    /* background: #772f1a; */
+    background: #f8fffc;
   }
 `;
 
@@ -87,7 +91,6 @@ export const NavLogoText = styled.h1`
   /* font-family: "Short Stack", cursive; */
   font-family: "Sue Ellen Francisco", cursive;
   color: #f8fffc;
-  display: flex;
   position: absolute;
   align-items: center;
   justify-content: center;
@@ -97,6 +100,7 @@ export const NavLogoText = styled.h1`
   left: 1rem;
   word-spacing: -0.3rem;
   margin-left: 7.5rem;
+  display: ${({ scrollNav }) => (scrollNav ? "none" : "flex")};
 
   @media screen and (min-width: 1025px) {
     /* top: -1vw; */
@@ -159,12 +163,17 @@ export const NavLogoText = styled.h1`
 
 export const NavLogoImg = styled.div`
   display: block;
-  width: 100%;
+  width: ${({ scrollNav }) => (scrollNav ? "200%" : "100%")};
+  max-width: 6.5rem;
+  min-width: ${({ scrollNav }) => (scrollNav ? "6.5rem" : "0")};
   height: 100%;
+  max-height: ${({ scrollNav }) => (scrollNav ? "80px" : "none")};
+  transition: all 0.3s ease;
   margin-left: 1rem;
   background: white;
   border-radius: 50%;
-  padding: 0.2rem;
+  overflow: hidden;
+  margin-top: -0.5rem;
 
   @media screen and (min-width: 1025px) {
     margin-left: 2.7vmin;
@@ -181,17 +190,19 @@ export const NavLogoImg = styled.div`
     /* width: 7%; */
     /* width: 3.5rem; */
     width: 7vmax;
-    margin-left: 6vmin;
-    height: auto;
+    margin-top: 0;
+    width: 12vmax;
+    margin-left: 6.5vmin;
+    /* height: auto; */
     /* position: absolute; */
   }
 
   @media screen and (width: 414px) {
-    margin-left: 2.65rem;
+    width: 11.3vmax;
   }
 
-  @media screen and (width: 320px) {
-    margin-left: -0.35rem;
+  @media screen and (max-width: 376px) {
+    width: 15vmax;
   }
 `;
 
@@ -202,11 +213,12 @@ export const MenuIcon = styled.div`
     display: flex;
     align-content: center;
     transform: translate(-65%, 35%);
-    color: whitesmoke;
+    /* color: whitesmoke; */
+    color: #f58549;
     margin-left: auto;
     top: 0;
     right: 0;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     cursor: pointer;
   }
 `;
@@ -236,7 +248,9 @@ export const NavLink = styled.a`
   font-size: 1.1rem;
   font-weight: 500;
   padding: 0.5rem 1.9rem;
-  color: #f8fffc;
+  /* color: #f8fffc; */
+  color: #f58549;
+  color: ${({ scrollNav }) => (scrollNav ? "#f58549" : "#f8fffc")};
   height: 100%;
   transition: all 0.2s ease;
   cursor: pointer;
@@ -253,8 +267,9 @@ export const NavLink = styled.a`
   @media screen and (min-width: 1025px) {
     /* padding: 1vmin 5.3vmin; */
     /* font-size: 3.4vmin; */
-    padding: 1vmin 1.8vw;
-    font-size: 1.5vw;
+    padding: 1vmin 1.9vw;
+    /* font-size: 1.5vw; */
+    font-size: 1.3vmax;
   }
 
   @media screen and (max-width: 940px) {

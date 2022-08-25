@@ -7,8 +7,10 @@ export const SidebarContainer = styled.div`
   display: grid;
   align-items: center;
   /* background: #e28743; */
-  background: #772f1a;
-  color: #fff;
+  /* background: #772f1a; */
+  background: #f8fffc;
+  /* color: #fff; */
+  color: #f58549;
   height: 100%;
   width: 100%;
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0%")};
@@ -20,14 +22,15 @@ export const SidebarContainer = styled.div`
 export const CloseIcon = styled.div`
   display: flex;
   color: whitesmoke;
-  font-size: 1.8rem;
+  color: #f58549;
+  font-size: 2rem;
   cursor: pointer;
   justify-self: flex-end;
   transform: translate(-100%, 30%);
 `;
 
 export const SidebarWrapper = styled.div`
-  color: whitesmoke;
+  color: #f58549;
 `;
 
 export const SidebarMenu = styled.div`
@@ -40,7 +43,8 @@ export const SidebarMenu = styled.div`
 
 export const SidebarLink = styled.a`
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
+  color: #f58549;
   cursor: pointer;
   align-items: center;
   justify-content: center;

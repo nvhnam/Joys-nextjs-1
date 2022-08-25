@@ -68,7 +68,7 @@ export default function Home() {
                         isBlack={true}
                         isWhite={true}
                         bigFont={false}
-                        withBorder={false}
+                        withBorder={true}
                       >
                         Read more
                       </Button>
@@ -106,7 +106,7 @@ export default function Home() {
                           isBlack={true}
                           isWhite={true}
                           bigFont={false}
-                          withBorder={false}
+                          withBorder={true}
                         >
                           Read more
                         </Button>

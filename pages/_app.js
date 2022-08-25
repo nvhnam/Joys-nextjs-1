@@ -4,6 +4,7 @@ import "../styles/globals.css";
 import { useState, useEffect } from "react";
 import videoBg from "../public/img/LogoOnly_60FPS.gif";
 import Image from "next/dist/client/image";
+import Head from "next/head";
 // import loadingScreen from "./loadingScreen";
 
 function MyApp({ Component, pageProps }) {
@@ -17,36 +18,41 @@ function MyApp({ Component, pageProps }) {
   }, []);
 
   return (
-    <div
-      style={{
-        width: "auto",
-        height: "auto",
-        backgroundColor: "#f8fffc",
-      }}
-    >
-      {loading ? (
-        <div
-          style={{
-            width: "100%",
-            height: "100vh",
-            overflowY: "hidden",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            marginTop: "auto",
-            marginBottom: "auto",
-          }}
-        >
-          <Image src={videoBg} layout="intrinsic" />
-        </div>
-      ) : (
-        <Layout>
-          <ToastProvider>
-            <Component {...pageProps} />
-          </ToastProvider>
-        </Layout>
-      )}
-    </div>
+    <>
+      <Head>
+        <link rel="JoyS icon" href="./img/LogoTrans1.png" />
+      </Head>
+      <div
+        style={{
+          width: "auto",
+          height: "auto",
+          backgroundColor: "#f8fffc",
+        }}
+      >
+        {loading ? (
+          <div
+            style={{
+              width: "100%",
+              height: "100vh",
+              overflowY: "hidden",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              marginTop: "auto",
+              marginBottom: "auto",
+            }}
+          >
+            <Image src={videoBg} layout="intrinsic" />
+          </div>
+        ) : (
+          <Layout>
+            <ToastProvider>
+              <Component {...pageProps} />
+            </ToastProvider>
+          </Layout>
+        )}
+      </div>
+    </>
   );
 }
 
