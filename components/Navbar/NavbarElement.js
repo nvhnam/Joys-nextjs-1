@@ -190,7 +190,7 @@ export const NavLogoImg = styled.div`
     /* width: 7%; */
     /* width: 3.5rem; */
     /* width: 7vmax; */
-    margin-top: 0vmax;
+    margin-top: -0.5vmax;
     /* width: 12vmax; */
     min-width: 6.6rem;
     max-width: 6.6rem;
