@@ -7,7 +7,7 @@ const Categories = [
     image: drink1,
     title: "JoyS drink 1",
     price: "30$",
-    alt: "JoyS drink",
+    alt: "JoyS coffee",
     kind: "drink",
   },
   {
@@ -15,7 +15,7 @@ const Categories = [
     image: pateso,
     title: "Pateso",
     price: "35$",
-    alt: "JoyS pateso pie",
+    alt: "JoyS pateso",
     kind: "cake",
   },
   {
@@ -23,7 +23,7 @@ const Categories = [
     image: drink1,
     title: "JoyS drink 1",
     price: "30$",
-    alt: "JoyS drink",
+    alt: "JoyS tra dao",
     kind: "drink",
   },
   {
@@ -31,7 +31,7 @@ const Categories = [
     image: pateso,
     title: "Pateso",
     price: "35$",
-    alt: "JoyS pateso pie",
+    alt: "JoyS pateso",
     kind: "cake",
   },
   {
@@ -39,7 +39,7 @@ const Categories = [
     image: drink1,
     title: "JoyS drink 1",
     price: "30$",
-    alt: "JoyS drink",
+    alt: "JoyS coffee",
     kind: "drink",
   },
   {
@@ -47,7 +47,7 @@ const Categories = [
     image: pateso,
     title: "Pateso",
     price: "35$",
-    alt: "JoyS pateso pie",
+    alt: "JoyS cheesecake",
     kind: "cake",
   },
   {
@@ -55,7 +55,7 @@ const Categories = [
     image: drink1,
     title: "JoyS Special drink 1",
     price: "30$",
-    alt: "JoyS special drink",
+    alt: "JoyS tra vai",
     kind: "special",
   },
   {
@@ -63,7 +63,7 @@ const Categories = [
     image: pateso,
     title: "Pateso Special",
     price: "35$",
-    alt: "JoyS special pateso pie",
+    alt: "JoyS pateso",
     kind: "special",
   },
   {
@@ -71,7 +71,7 @@ const Categories = [
     image: drink1,
     title: "JoyS Special drink 1",
     price: "30$",
-    alt: "JoyS special drink",
+    alt: "JoyS cafe",
     kind: "special",
   },
 ];

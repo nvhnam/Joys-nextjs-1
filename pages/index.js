@@ -33,7 +33,7 @@ export default function Home() {
     <>
       <Head>
         <title>JoyS Bakery</title>
-        <meta name="description" content="JoyS coffee and bakery homepage" />
+        <meta name="description" content="JoyS bakery" />
         <link rel="JoyS icon" href="./img/LogoTrans1.png" />
       </Head>
       {/* Home Slide */}
@@ -51,7 +51,7 @@ export default function Home() {
                   className="MenuImg"
                   layout="responsive"
                   src={about1}
-                  alt="Joys coffee and bakery menu picture"
+                  alt="Joys bakery"
                 />
                 <HomeCol12Wrapper>
                   <HomeCol12Text1>About</HomeCol12Text1>
@@ -98,7 +98,7 @@ export default function Home() {
                     <HomeCol12Button>
                       <a
                         target="_blank"
-                        href="https://www.facebook.com/JoySBakery2022/posts/1068928757296306"
+                        href="https://www.facebook.com/JoySBakery2022/posts/pfbid0Q9k2csbb2cvvDtCNZ122K31vmfmQPCtxaZrG9Vs4hWqbrb9Dwr5PMDyyPiJiBmiJl"
                         rel="noopener noreferrer"
                       >
                         <Button
@@ -117,7 +117,7 @@ export default function Home() {
                     <Image
                       layout="responsive"
                       src={home2}
-                      alt="Joys coffee and bakery home picture 2"
+                      alt="Joys coffee and bakery"
                       className="MenuImg"
                     />
                   </HomeCol21Img>

@@ -22,7 +22,7 @@ export default function About() {
     <>
       <Head>
         <title>JoyS Bakery</title>
-        <meta name="description" content="Joys coffee and bakery information" />
+        <meta name="description" content="Joys bakery" />
         <link rel="JoyS icon" href="./img/LogoTrans1.png" />
       </Head>
       <BannerContainer>
@@ -39,7 +39,7 @@ export default function About() {
                   className="Home2Img"
                   src={about3}
                   layout="responsive"
-                  alt="Joys about picture"
+                  alt="Joys bakery"
                 />
               </AboutCol1Pic>
             </AboutCol1>

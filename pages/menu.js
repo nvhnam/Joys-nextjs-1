@@ -52,7 +52,7 @@ export default function Menu() {
     <>
       <Head>
         <title>JoyS Bakery</title>
-        <meta name="description" content="JoyS coffee and bakery menu" />
+        <meta name="description" content="JoyS bakery" />
         <link rel="JoyS icon" href="./img/LogoTrans1.png" />
       </Head>
       <BannerContainer>

@@ -61,11 +61,11 @@ export const HomeText1 = styled.h1`
     /* font-size: 31vmin; */
     margin: -3vmin;
     letter-spacing: 2vmin;
-    font-size: 10.3vmax;
+    font-size: 10vmax;
   }
 
   @media screen and (max-width: 1024px) {
-    font-size: 11vmax;
+    font-size: 9.8vmax;
     margin: -1.5rem;
   }
 
@@ -98,11 +98,11 @@ export const HomeText2 = styled.h1`
 
   @media screen and (min-width: 1025px) {
     /* font-size: 6.3vmin; */
-    font-size: 2.5vmax;
+    font-size: 2.2vmax;
   }
 
   @media screen and (max-width: 1024px) {
-    font-size: 2.7vmax;
+    font-size: 2.3vmax;
     /* font-size: 1.8rem; */
   }
 
@@ -133,13 +133,13 @@ export const HomePara = styled.p`
 
   @media screen and (min-width: 1025px) {
     /* font-size: 4.7vmin; */
-    font-size: 2vmax;
+    font-size: 1.7vmax;
   }
 
   @media screen and (max-width: 1024px) {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     margin-bottom: 1.6rem;
-    font-size: 2.2vmax;
+    font-size: 1.9vmax;
   }
 
   @media screen and (max-width: 940px) {

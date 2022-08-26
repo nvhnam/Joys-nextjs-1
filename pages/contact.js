@@ -20,7 +20,7 @@ export default function Contact() {
     <>
       <Head>
         <title>JoyS Bakery</title>
-        <meta name="description" content="JoyS coffee and bakery contact" />
+        <meta name="description" content="JoyS bakery" />
         <link rel="JoyS icon" href="./img/LogoTrans1.png" />
       </Head>
       <BannerContainer>

@@ -136,7 +136,7 @@ export const HomeCol12Text2 = styled.h1`
   color: black;
 
   @media screen and (min-width: 1025px) {
-    font-size: 5.4vmin;
+    font-size: 5.1vmin;
   }
 
   @media screen and (max-width: 1024px) {
@@ -151,7 +151,7 @@ export const HomeCol12Para = styled.p`
   margin-bottom: 2rem;
 
   @media screen and (min-width: 1025px) {
-    font-size: 3.2vmin;
+    font-size: 2.9vmin;
   }
 
   @media screen and (max-width: 1024px) {

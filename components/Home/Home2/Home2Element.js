@@ -97,7 +97,7 @@ export const Home2Buttons = styled.button`
   /* display: flex;
   align-items: center;
   justify-content: center; */
-  color: #f8fffc;
+  /* color: #f8fffc; */
   color: #585123;
   font-size: 1.5rem;
   cursor: pointer;
@@ -114,8 +114,7 @@ export const Home2Buttons = styled.button`
   }
 
   &:hover {
-    transition: all 0.2s ease;
-    /* border: solid 2px #772f1a; */
+    transition: all 0.2s ease; 
     color: #f8fffc;
     background: #f58549;
   }
@@ -147,7 +146,7 @@ export const Home2Buttons = styled.button`
   }
 
   @media screen and (width: 320px) {
-    margin: 1.3rem 0.5rem;
+    /* margin: 1.3rem 0.5rem; */
     padding: 5px 18px;
     font-size: 1.2rem;
   }
@@ -190,6 +189,7 @@ export const Home2MenuWrapper = styled.div`
   width: 20rem;
   border-radius: 10px;
   overflow: hidden;
+  min-height: 100%;
   /* background: #f8fffc; */
   /* background: rgba(0, 0, 0, 0.01); */
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 24%);
