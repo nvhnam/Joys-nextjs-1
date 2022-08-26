@@ -69,7 +69,8 @@ export const AboutContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #f4a75d;
+  /* background: #f4a75d; */
+  background: #f8fffc;
 
   @media screen and (min-width: 1025px) {
     padding: 0 3vmax;
@@ -102,6 +103,11 @@ export const AboutRow = styled.div`
     padding: 3vmin 13vmin;
   }
 
+  @media screen and (max-width: 1024px) {
+    /* padding: 0; */
+    justify-content: center;
+  }
+
   @media screen and (max-width: 767px) {
     flex-direction: column;
     margin-left: 0;
@@ -111,11 +117,17 @@ export const AboutRow = styled.div`
 export const AboutCol1 = styled.div`
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 34%;
   height: auto;
   
   @media screen and (min-width: 1025px) {
-    padding-right: 4vmin;
+    /* padding-right: 4vmin; */
+    padding-right: 1.6vmax;
+  }
+
+  @media screen and (max-width: 1024px) {
+    /* padding-right: 4vmin; */
+    /* padding-right: 1vmax; */
   }
 
   @media screen and (max-width: 767px) {
@@ -136,7 +148,7 @@ export const AboutCol1Pic = styled.div`
 `;
 
 export const AboutCol2 = styled.div`
-  width: 45%;
+  width: 50%;
   display: flex;
   height: auto;
   align-items: center;
@@ -144,13 +156,25 @@ export const AboutCol2 = styled.div`
   margin-left: 5rem;
 
   @media screen and (min-width: 1025px) {
-    padding-left: 4vmin;
+    /* padding-left: 5vmin; */
+    margin-left: 7.6vmax;
+  }
+
+  @media screen and (max-width: 1024px) {
+    margin-left: 5vmax;
+    margin-top: -1.8vmax;
+  }
+
+  @media screen and (max-width: 830px) {
+    /* margin-left: 5vmax; */
+    margin-top: -5vmax;
   }
 
   @media screen and (max-width: 767px) {
     width: 100%;
     padding: 1rem;
     margin-left: 0;
+    margin-top: -6vmax;
   }
 `;
 
@@ -158,19 +182,24 @@ export const AboutCol2Wrapper = styled.div`
   width: 100%;
   height: 100%;
   padding: 2.7rem;
-  background: rgba(0, 0, 0, 0.63);
-  border-radius: 10px;
+  /* background: rgba(0, 0, 0, 0.63); */
+  /* border-radius: 10px; */
 
   @media screen and (min-width: 1025px) {
-    padding: 7vmin;
+    /* padding: 1vmin; */
+    padding: 1vmax;
   }
 
   @media screen and (max-width: 1024px) {
-    padding: 2.4rem;
+    padding: 3vmax;
   }
 
   @media screen and (max-width: 940px) {
     padding: 2rem;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 1.8vmax;
   }
 
   @media screen and (width: 320px) {
@@ -179,25 +208,41 @@ export const AboutCol2Wrapper = styled.div`
 `;
 
 export const AboutCol2Title = styled.h1`
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: #f8fffc;
+  color: #f58549;
   font-family: "Short Stack", cursive;
   margin-bottom: 6rem;
   text-align: center;
 
   @media screen and (min-width: 1025px) {
-    margin-bottom: 10vmin;
-    font-size: 9.5vmin;
+    /* margin-bottom: 9vmin; */
+    margin-bottom: 3vmax;
+    /* font-size: 9vmin; */
+    font-size: 4.8vmax;
   }
 
   @media screen and (max-width: 1024px) {
-    font-size: 3rem;
-    margin-bottom: 5rem;
+    font-size: 4.7vmax;
+    /* margin-bottom: 5rem; */
+    margin-bottom: 3.8vmax;
   }
 
   @media screen and (max-width: 940px) {
-    font-size: 2rem;
-    margin-bottom: 2rem;
+    /* font-size: 2rem; */
+    font-size: 4.2vmax;
+    /* margin-bottom: 2rem; */
+    margin-bottom: 3vmax;
+  }
+
+  @media screen and (max-width: 830px) {
+    font-size: 3.5vmax;
+    margin-bottom: 2vmax;
+  }
+
+  @media screen and (max-width: 830px) {
+    font-size: 3.7vmax;
+    margin-bottom: 2.5vmax;
   }
 
   @media screen and (width: 320px) {
@@ -209,15 +254,31 @@ export const AboutCol2Title = styled.h1`
 
 export const AboutCol2Para = styled.p`
   font-size: 1.3rem;
-  color: #f8fffc;
+  /* color: #f8fffc; */
+  color: black;
 
   @media screen and (min-width: 1025px) {
-    font-size: 4vmin;
+    /* font-size: 3.5vmin; */
+    font-size: 1.6vmax;
     margin-bottom: 1vmin;
   }
 
+  @media screen and (max-width: 1024px) {
+    font-size: 1.8vmax;
+  }
+
   @media screen and (max-width: 940px) {
-    font-size: 1rem;
+    font-size: 1.78vmax;
+  }
+
+  @media screen and (max-width: 830px) {
+    font-size: 1.5vmax;
+    margin-bottom: -0.8vmax;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 1.7vmax;
+    margin-bottom: 0vmax;
   }
 
   @media screen and (width: 320px) {
