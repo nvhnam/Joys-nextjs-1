@@ -42,7 +42,7 @@ function MyApp({ Component, pageProps }) {
               marginBottom: "auto",
             }}
           >
-            <Image src={videoBg} layout="intrinsic" />
+            <Image src={videoBg} layout="intrinsic" priority />
           </div>
         ) : (
           <Layout>

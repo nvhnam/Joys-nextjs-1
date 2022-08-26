@@ -40,6 +40,7 @@ export default function About() {
                   src={about3}
                   layout="responsive"
                   alt="Joys bakery"
+                  loading="lazy"
                 />
               </AboutCol1Pic>
             </AboutCol1>

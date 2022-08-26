@@ -149,6 +149,7 @@ export default function Menu() {
                               alt={alt}
                               className="Home2Img"
                               layout="responsive"
+                              loading="lazy"
                             />
                           </MenuCol2ListImg>
                           <MenuCol2ListTitle>{title}</MenuCol2ListTitle>

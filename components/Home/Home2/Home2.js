@@ -57,6 +57,7 @@ export default function Home2() {
                           alt={alt}
                           className="Home2Img"
                           layout="responsive"
+                          loading="lazy"
                         />
                       </Home2MenuImg>
                       <Home2MenuTitle>{title}</Home2MenuTitle>

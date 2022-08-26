@@ -21,6 +21,7 @@ export default function Home1() {
             src={about2}
             layout="responsive"
             alt="Joys coffee and bakery home picture"
+            loading="lazy"
           />
           <HomeRow1>
             <HomeRow1Wrapper>

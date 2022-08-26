@@ -52,6 +52,7 @@ export default function Home() {
                   layout="responsive"
                   src={about1}
                   alt="Joys bakery"
+                  loading="lazy"
                 />
                 <HomeCol12Wrapper>
                   <HomeCol12Text1>About</HomeCol12Text1>
@@ -119,6 +120,7 @@ export default function Home() {
                       src={home2}
                       alt="Joys coffee and bakery"
                       className="MenuImg"
+                      loading="lazy"
                     />
                   </HomeCol21Img>
                 </HomeRow21>

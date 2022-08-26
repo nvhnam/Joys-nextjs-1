@@ -24,14 +24,18 @@ const HeroSection = () => {
               <Image
                 src={background4}
                 layout="fill"
-                alt="Joys coffee and bakery background"
+                objectFit="cover"
+                alt="Joys bakery"
+                loading="lazy"
               />
             </HeroImg>
             <HeroImg>
               <Image
                 src={transBackground}
                 layout="fill"
-                alt="Joys coffee and bakery background"
+                objectFit="cover"
+                alt="Joys bakery"
+                loading="lazy"
               />
             </HeroImg>
           </Carousel>
