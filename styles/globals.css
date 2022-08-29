@@ -33,6 +33,11 @@ a {
   border-radius: 10px;
 }
 
+.Home4Img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
 .NavLogo {
   border-radius: 50%;
 }

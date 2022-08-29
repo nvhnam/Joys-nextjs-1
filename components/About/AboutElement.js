@@ -132,7 +132,7 @@ export const AboutCol1 = styled.div`
 
   @media screen and (max-width: 767px) {
     width: 100%;
-    padding: 1rem;
+    padding: 1.7rem;
     margin-bottom: 2rem;
   }
 
@@ -145,6 +145,8 @@ export const AboutCol1Pic = styled.div`
   display: block;
   width: 100%;
   height: 100%;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 30%);
+  border-radius: 10px;
 `;
 
 export const AboutCol2 = styled.div`

@@ -6,7 +6,8 @@ export const MenuContainer = styled.div`
   justify-content: center;
   width: 100%;
   height: 100%;
-  background: #f4a75d;
+  /* background: #f4a75d; */
+  background: #f8fffc;
 `;
 
 export const MenuWrapper = styled.div`
@@ -58,6 +59,8 @@ export const MenuCol1Wrapper = styled.div`
   @media screen and (max-width: 767px) {
     padding-top: 0;
     user-select: none;
+    display: flex;
+    justify-content: center;
   }
 
   @media screen and (min-height: 1024px) {
@@ -81,59 +84,81 @@ export const MenuColTitle = styled.div`
     border: none;
     font-weight: bold;
     margin-left: 1rem;
-    color: black;
-    color: #772f1a;
+    /* color: black; */
+    /* color: #772f1a; */
+    color: #f58549;
     transition: all 0.2s ease-in-out;
     top: 0;
     left: auto;
-    box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
+    box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.08);
   }
 `;
 
 export const MenuDropWrapper = styled.div`
-  width: 100%;
+  width: 80%;
   height: 100%;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 30%);
+  margin-left: 1rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+
+  @media screen and (max-width: 830px) {
+    margin-top: -0.5rem;
+    margin-left: 0.7rem;
+  }
 
   @media screen and (max-width: 767px) {
     position: absolute;
     transition: all 0.2 ease-in-out;
-    top: 110%;
+    top: 118%;
     left: 0;
     z-index: 9;
     box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
     display: ${({ open }) => (open ? "flex" : "none")};
     flex-direction: column;
     height: 385%;
-    margin-left: 1rem;
+    margin-left: 1.6rem;
     width: 90%;
     overflow-y: scroll;
     background-color: white;
+    border-radius: 0;
   }
 `;
 
 export const MenuCol1Title = styled.button`
   cursor: pointer;
-  width: 80%;
+  width: 100%;
   text-decoration: none;
   padding: 2.8vmax;
   font-size: 1.8vmax;
   background: #f8fffc;
   border: none;
   font-weight: bold;
-  margin-left: 1rem;
-  color: #772f1a;
+  /* margin-left: 1rem; */
+  /* color: #772f1a; */
+  color: #f58549;
   transition: all 0.2s ease-in-out;
+
+  &:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  &:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
 
   &:hover {
     transition: all 0.2s ease-in-out;
     color: #f8fffc;
-    background-color: black;
+    background-color: #585123;
   }
 
   &.active {
     /* transition: all 0.2s ease-in-out; */
     color: white;
-    background-color: black;
+    background-color: #585123;
   }
 
   @media screen and (max-width: 767px) {
@@ -148,7 +173,7 @@ export const MenuCol1Title = styled.button`
   }
 
   @media screen and (min-height: 1024px) {
-    font-size: 2.5vmin;
+    font-size: 2.45vmin;
     padding: 3.7vmin;
   }
 `;
@@ -163,9 +188,18 @@ export const MenuCol2Row = styled.div`
 export const MenuCol2 = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 3fr);
-  grid-gap: 2.3vmax;
+  grid-gap: 5.3vmax;
+  /* grid-gap: auto; */
   margin-top: 1rem;
   z-index: 2;
+
+  @media screen and (max-width: 1024px) {
+    grid-gap: 4.3vmax;
+  }
+
+  @media screen and (max-width: 830px) {
+    grid-gap: 2vmax;
+  }
 
   @media screen and (max-width: 767px) {
     grid-template-columns: repeat(2, 1fr);
@@ -197,12 +231,12 @@ export const MenuCol2Title = styled.div`
   width: 100%;
   height: auto;
   margin-left: 1.5rem;
-  font-size: 2.8rem;
-  color: #f8fffc;
+  font-size: 2.5rem;
+  /* color: #f8fffc; */
+  color: #f58549;
   margin-bottom: 2rem;
   margin-top: 2rem;
 
-  
   @media screen and (min-width: 1025px) {
     font-size: 8vmin;
     margin-bottom: 7vmin;
@@ -217,7 +251,7 @@ export const MenuCol2Title = styled.div`
   }
 
   @media screen and (min-height: 1024px) {
-    font-size: 4.8vmin;
+    font-size: 4.7vmin;
   }
 `;
 
@@ -240,22 +274,25 @@ export const MenuCol2Underline = styled.div`
 export const MenuCol2ListContainer = styled.div`
   width: 100%;
   height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const MenuCol2ListWrapper = styled.div`
   /* background: #eec170; */
   background: #f8fffc;
-  width: 18.7vmax;
+  width: 16vmax;
   border-radius: 10px;
   overflow: hidden;
   margin-top: 3rem;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 30%);
 
   @media screen and (max-width: 1024px) {
-    width: 19vmax;
+    width: 17vmax;
   }
 
   @media screen and (max-width: 940px) {
-    width: 18vmax;
     margin-top: 2rem;
   }
 
@@ -277,21 +314,48 @@ export const MenuCol2ListImg = styled.div`
 
 export const MenuCol2ListTitle = styled.h1`
   font-size: 1.7vmax;
-  color: #772f1a;
+  /* color: #772f1a; */
+  color: #f58549;
   text-align: center;
+
+  @media screen and (max-width: 830px) {
+    font-size: 1.47vmax;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 1.7vmax;
+  }
 `;
 
 export const MenuCol2ListDescr = styled.p`
   font-size: 1.2vmax;
   text-align: center;
-  color: #772f1a;
+  /* color: #772f1a; */
+  color: #f58549;
   margin: -0.5vmax auto;
+
+  @media screen and (max-width: 830px) {
+    font-size: 1vmax;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 1.2vmax;
+  }
 `;
 
 export const MenuCol2ListPrice = styled.p`
   font-size: 1.5vmax;
-  color: #772f1a;
+  /* color: #772f1a; */
+  color: #f58549;
   text-align: center;
+
+  @media screen and (max-width: 830px) {
+    font-size: 1.3vmax;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 1.5vmax;
+  }
 `;
 
 export const MenuCol2ListValue = styled.div`

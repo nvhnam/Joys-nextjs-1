@@ -165,7 +165,7 @@ export default function Menu() {
                             <Image
                               src={image}
                               alt={alt}
-                              className="Home2Img"
+                              className="Home4Img"
                               layout="responsive"
                               loading="lazy"
                             />
