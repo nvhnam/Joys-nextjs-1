@@ -45,12 +45,12 @@ const Contact2 = () => {
                     4A Trần Quý Cáp, P.11, Bình Thạnh
                   </Contact2Col1Detail>
                 </Contact2Col1Info>
-                <Contact2Col1WorkHour>
+                {/* <Contact2Col1WorkHour>
                   <Contact2Col1Icon>
                     <BsClock />
                   </Contact2Col1Icon>
                   6AM - 11AM + 4PM - 9PM
-                </Contact2Col1WorkHour>
+                </Contact2Col1WorkHour> */}
                 {/* ------ ADDRESS 2 ------- */}
                 <Contact2Col1Info>
                   <Contact2Col1Icon>
@@ -60,12 +60,12 @@ const Contact2 = () => {
                     377/18 Lê Quang Định, P.5, Bình Thạnh
                   </Contact2Col1Detail>
                 </Contact2Col1Info>
-                <Contact2Col1WorkHour>
+                {/* <Contact2Col1WorkHour>
                   <Contact2Col1Icon>
                     <BsClock />
                   </Contact2Col1Icon>
                   6AM - 11AM
-                </Contact2Col1WorkHour>
+                </Contact2Col1WorkHour> */}
                 {/* ------ PHONE ------- */}
                 <Contact2Col1Info>
                   <Contact2Col1Icon>

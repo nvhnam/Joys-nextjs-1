@@ -10,13 +10,23 @@ export const Contact2Container = styled.div`
   padding-left: 6rem;
 
   @media screen and (min-width: 1025px) {
-    padding-left: 16.5vmin;
-    margin-top: 0;
+    /* padding-left: 16.5vmin; */
+    margin-right: -2vmax;
+    margin-left: 3.3vmax;
+    margin-top: 0rem;
+    padding-top: 1vmax;
   }
 
   @media screen and (max-width: 940px) {
     padding-left: 4rem;
     margin-top: 1rem;
+  }
+
+  @media screen and (max-width: 840px) {
+    /* padding-left: 4rem; */
+    padding-left: 5.6vmax;
+    /* margin-top: 4.5rem; */
+    margin-top: 6.3vmax;
   }
 
   @media screen and (max-width: 767px) {
@@ -57,14 +67,20 @@ export const Contact2Col1 = styled.div`
 
 export const Contact2Col1Title = styled.h1`
   font-size: 3.2rem;
-  color: white;
+  /* color: white; */
+  color: #f58549;
 
   @media screen and (min-width: 1025px) {
-    font-size: 9vmin;
+    font-size: 7.6vmin;
+    padding-top: 8vmax;
   }
 
   @media screen and (max-width: 940px) {
     font-size: 5vmin;
+  }
+
+  @media screen and (max-width: 840px) {
+    font-size: 4.6vmin;
   }
 
   @media screen and (max-width: 767px) {
@@ -86,13 +102,23 @@ export const Contact2Col1Wrapper = styled.div`
   width: 100%;
   height: 100%;
   margin-top: 1.7rem;
-  background-color: #eec170;
+  /* background-color: #eec170; */
   padding: 1rem;
-  border-radius: 10px;
 
   @media screen and (min-width: 1025px) {
     margin-top: 5.5vmin;
     padding: 2.8vmin;
+    padding: 0;
+  }
+
+  @media screen and (max-width: 840px) {
+    padding: 0;
+    margin-top: 6vmax;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-top: 0;
+    padding: 0;
   }
 `;
 
@@ -108,6 +134,8 @@ export const Contact2Col1Icon = styled.div`
   height: auto;
   display: flex;
   color: #772f1a;
+  color: black;
+  /* color: #f2a65a; */
   font-size: 1.4rem;
   margin-right: 0.7rem;
 
@@ -132,6 +160,8 @@ export const Contact2Col1Detail = styled.p`
   font-size: 1.1rem;
   font-weight: bold;
   color: #772f1a;
+  color: black;
+  /* color: #f2a65a; */
 
   @media screen and (min-width: 1025px) {
     font-size: 3.3vmin;
@@ -152,6 +182,7 @@ export const Contact2Col1WorkHour = styled.p`
   font-weight: bold;
   align-items: center;
   color: #772f1a;
+  color: black;
 
   @media screen and (min-width: 1025px) {
     font-size: 3.1vmin;

@@ -4,8 +4,18 @@ export const Contact1Container = styled.div`
   width: 100%;
   height: 100%;
   background-color: #eec170;
+  background-color: whitesmoke;
   border-radius: 10px;
+  margin-top: 10vmax;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 20%);
 
+  @media screen and (min-width: 1025px) {
+    margin-top: 25vmin;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-top: 0;
+  }
 `;
 
 export const Contact1Wrapper = styled.div`
@@ -27,6 +37,7 @@ export const Contact1Title = styled.h1`
   font-weight: bold;
   text-align: center;
   color: #772f1a;
+  color: #f58549;
   margin: 2rem 0;
 
   @media screen and (min-width: 1025px) {
@@ -37,6 +48,14 @@ export const Contact1Title = styled.h1`
   @media screen and (max-width: 940px) {
     font-size: 2.9vmax;
     margin: 1.8vmax 0;
+  }
+
+  @media screen and (max-width: 840px) {
+    font-size: 2.65vmax;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 2.8vmax;
   }
 `;
 

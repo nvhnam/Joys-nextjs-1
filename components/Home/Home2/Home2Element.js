@@ -108,13 +108,14 @@ export const Home2Buttons = styled.button`
   font-weight: bold;
   transition: all 0.2s ease-in-out;
   border-right: solid 2px #585123;
+  width: 100%;
 
   &:last-child {
     border-right: none;
   }
 
   &:hover {
-    transition: all 0.2s ease; 
+    transition: all 0.2s ease;
     color: #f8fffc;
     background: #f58549;
   }

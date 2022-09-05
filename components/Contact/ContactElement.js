@@ -4,7 +4,8 @@ export const ContactContainer = styled.div`
   display: flex;
   align-items: center;
   justify-items: center;
-  background: #f4a75d;
+  /* background: #f4a75d; */
+  background: #f8fffc;
   width: 100%;
   height: 100%;
 
@@ -17,13 +18,13 @@ export const ContactWrapper = styled.div`
   width: 100%;
   height: 100%;
   /* max-width: 1400px; */
-  margin-top: 5rem;
+  margin-top: -3rem;
   margin-bottom: 6rem;
   padding: 1rem 1rem;
-  min-height: 65vh;
+  min-height: 70vh;
 
-  @media screen and (max-width: 940px) {
-    margin-top: 3rem;
+  @media screen and (max-width: 840px) {
+    margin-bottom: 6vmax;
   }
 
   @media screen and (max-width: 767px) {
@@ -47,8 +48,12 @@ export const ContactRow = styled.div`
 `;
 
 export const ContactCol1 = styled.div`
-  width: 42%;
+  width: 40%;
   height: 100%;
+
+  @media screen and (max-width: 840px) {
+    width: 50%;
+  }
 
   @media screen and (max-width: 767px) {
     width: 100%;
